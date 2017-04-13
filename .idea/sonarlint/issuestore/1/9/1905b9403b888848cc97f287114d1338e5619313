@@ -1,0 +1,5 @@
+
+îsquid:S1319"The type of the "matchingNodeChildren" object should be an interface such as "List" rather than the implementation "ArrayList".(çÕ‘Ù
+åsquid:S1319"wThe type of the "nodeChildren" object should be an interface such as "List" rather than the implementation "ArrayList".(çÕ‘Ù
+Nsquid:S3400"9Remove this method and declare a constant for this value.(î∑≥õ
+Psquid:S1172";Remove this unused method parameter "matchingNodeChildren".(çÕ‘Ù

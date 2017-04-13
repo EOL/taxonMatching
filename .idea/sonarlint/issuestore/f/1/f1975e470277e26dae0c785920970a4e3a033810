@@ -1,0 +1,7 @@
+
+msquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(øŞT
+:squid:S1166"%Either log or rethrow this exception.(ï­£Ä
+^squid:S2147"DCombine this catch with the one at line 30, which has the same body.(âÃƒŠıÿÿÿÿ
+asquid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

@@ -1,0 +1,16 @@
+
+msquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(éº¤p
+squid:S1319"tThe type of the "rootNodes" object should be an interface such as "List" rather than the implementation "ArrayList".(¦‚äüÿÿÿÿ
+squid:S1319"tThe type of the "rootNodes" object should be an interface such as "List" rather than the implementation "ArrayList".(¿—½¬şÿÿÿÿ
+’squid:S1319"xThe type of the "matchingNodes" object should be an interface such as "List" rather than the implementation "ArrayList".(Ûó¥âüÿÿÿÿ
+Gsquid:S1135"2Complete the task associated to this TODO comment.(Ò¬„Ó
+Lsquid:S1135"2Complete the task associated to this TODO comment.(²¨İ´øÿÿÿÿ
+Gsquid:S1135"2Complete the task associated to this TODO comment.(ÆèÚ£
+@squid:S1172"+Remove this unused method parameter "node".(Œ—‰ù
+\squid:S2259"BNullPointerException might be thrown as 'results' is nullable here(’® Åşÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(’® Åşÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(ßĞìŞùÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(å¥‡
+Bsquid:S1604"(Make this anonymous inner class a lambda(ø««Ãÿÿÿÿÿ
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ì¤Ï
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê‚áÒ

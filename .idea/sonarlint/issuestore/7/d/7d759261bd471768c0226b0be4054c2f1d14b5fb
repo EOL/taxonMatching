@@ -1,0 +1,10 @@
+
+‡squid:S1319"sThe type of the "children" object should be an interface such as "List" rather than the implementation "ArrayList".(£˜öe
+Žsquid:S1319"tThe type of the "ancestors" object should be an interface such as "List" rather than the implementation "ArrayList".(µôòäüÿÿÿÿ
+…squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Þ¸ü
+Žsquid:S1319"tThe type of the "ancestors" object should be an interface such as "List" rather than the implementation "ArrayList".(ÙÔžÒúÿÿÿÿ
+ˆsquid:S1319"sThe type of the "children" object should be an interface such as "List" rather than the implementation "ArrayList".(ûŒÏ³
+„squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ñ£\
+Gsquid:S1135"2Complete the task associated to this TODO comment.(Ùúá—
+Xsquid:S00107"BConstructor has 15 parameters, which is greater than 7 authorized.(ÑÒž‚
+Rsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÑÝðw
