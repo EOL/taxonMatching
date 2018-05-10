@@ -19,26 +19,29 @@ public class MatchingScoreHandler {
         ancestorMatchWeight = Double.parseDouble(ResourceHandler.getPropertyValue("ancestorMatchWeight"));
     }
 
-    public int countMatches(ArrayList<String> matchingNodeChildren, ArrayList<Node> nodeChildren){
-        matchingNodeChildren.retainAll(getCildrenNames(nodeChildren));
+    public int countMatches(ArrayList<Node> matchingNodeChildren, ArrayList<Node> nodeChildren){
+        matchingNodeChildren.retainAll(nodeChildren);
         return matchingNodeChildren.size();
     }
 
-    private ArrayList<String> getCildrenNames(ArrayList<Node> childrenNodes){
-        ArrayList<String> childrenNames = new ArrayList<String>();
-        for(Node childNode : childrenNodes){
-            childrenNames.add(childNode != null ? childNode.getScientificName() : null);
-        }
-        return childrenNames;
-    }
+//    private ArrayList<String> getCildrenNames(ArrayList<Node> childrenNodes){
+//        ArrayList<String> childrenNames = new ArrayList<String>();
+//        for(Node childNode : childrenNodes){
+//            childrenNames.add(childNode != null ? childNode.getScientificName() : null);
+//        }
+//        return childrenNames;
+//    }
 
     public int countAncestors(Node node){
         int count = 0;
-        for(Node n : node.getAncestors()){
-            if (n.getPageId() != 0)
-                count++;
+        if (node != null && node.getAnecstors() != null) {
+            for (Node n : node.getAnecstors()) {
+                if (n.getPageId() != 0)
+                    count++;
+            }
+            return matchingAncestorsScore(count, node.getAnecstors().size());
         }
-        return matchingAncestorsScore(count, node.getAncestors().size());
+        return 0;
     }
 
     public int matchingAncestorsScore(int matchingAncestorsCount, int totalAncestorsCount){

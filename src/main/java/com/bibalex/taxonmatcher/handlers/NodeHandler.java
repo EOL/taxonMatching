@@ -24,7 +24,10 @@ public class NodeHandler {
 
     public Node nativeVirus(){
         //TODO: implement native virus from DWH
-        return new Node(1,1,10,9, "virus", "viruseen", "kingdom");
+        return new Neo4jHandler().getNativeVirusNode();
+//        return new Node(1,1,9, "virus", "viruseen", "kingdom");
+//        return new Node("1", "Virus", "kingdom", "viruseen", "viruses", "virussss");
+
     }
 
 }

@@ -1,11 +1,11 @@
 package com.bibalex.taxonmatcher.handlers;
 
-import com.bibalex.taxonmatcher.handlers.ResourceHandler;
-import org.apache.solr.client.solrj.SolrClient;
+import com.bibalex.taxonmatcher.controllers.NodeMapper;
+import org.apache.logging.log4j.Logger;
+import org.apache.solr.common.SolrInputDocument;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.CloudSolrClient;
-import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocumentList;
 
 import java.io.IOException;
@@ -15,17 +15,17 @@ import java.io.IOException;
  */
 public class SolrHandler {
 
-    String zkHostString;
-    String defaultCollection;
-//    SolrClient solr;
-    CloudSolrClient solr;
+    private String zkHostString;
+    private String defaultCollection;
+    private CloudSolrClient solr;
+    private static Logger logger;
 
     public SolrHandler(){
         zkHostString = ResourceHandler.getPropertyValue("zookeeperHost");
         defaultCollection = ResourceHandler.getPropertyValue("defaultCollection");
-        //solr = new CloudSolrClient.Builder().withZkHost(zkHostString).build();
         solr = new CloudSolrClient(zkHostString);
         solr.setDefaultCollection(defaultCollection);
+        logger = LogHandler.getLogger(NodeMapper.class.getName());
     }
 
     public SolrDocumentList performQuery(String queryString){
@@ -34,11 +34,22 @@ public class SolrHandler {
         try {
             return solr.query(query).getResults();
         } catch (SolrServerException e) {
-            e.printStackTrace();
+            logger.error("SolrServerException in performing query exception " + e.getStackTrace());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("IOException in performing query " + e.getStackTrace());
         }
         return null;
+    }
+
+    public void commitDocument(SolrInputDocument doc){
+        try {
+            solr.add(doc);
+            solr.commit();
+        } catch (SolrServerException e) {
+            logger.error("SolrServerException in commit document " + e.getStackTrace());
+        } catch (IOException e) {
+            logger.error("IOException in commit document " + e.getStackTrace());
+        }
     }
 
 

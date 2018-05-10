@@ -1,0 +1,8 @@
+
+Node with name test1 is mapped to page 1
+Node with name test2 is mapped to page 4
+New page is created for node named: test3
+New page is created for node named: Parus major Linnaeus, 1788
+New page is created for node named: Dictyonema
+New page is created for node named: Dictyonema
+New page is created for node named: Dictyonema

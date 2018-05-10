@@ -1,78 +1,652 @@
-2017-05-07 13:38:42,388 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
-2017-05-07 13:38:42,396 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
-2017-05-07 13:38:44,745 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
-2017-05-07 13:38:44,745 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
-2017-05-07 13:38:44,753 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
-2017-05-07 13:38:46,162 INFO c.b.t.c.NodeMapper [main] depth is: 1
-2017-05-07 13:38:46,163 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,182 INFO c.b.t.c.NodeMapper [main] depth is: 2
-2017-05-07 13:38:46,182 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,189 INFO c.b.t.c.NodeMapper [main] depth is: 3
-2017-05-07 13:38:46,190 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,210 INFO c.b.t.c.NodeMapper [main] depth is: 4
-2017-05-07 13:38:46,212 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,255 INFO c.b.t.c.NodeMapper [main] depth is: 5
-2017-05-07 13:38:46,255 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,267 INFO c.b.t.c.NodeMapper [main] depth is: 6
-2017-05-07 13:38:46,267 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
-2017-05-07 13:38:46,267 INFO c.b.t.c.NodeMapper [main] New page is created for node named: kak
-2017-05-07 13:38:46,267 INFO c.b.t.c.NodeMapper [main] ====================children=================
-2017-05-07 13:38:46,267 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
-2017-05-07 13:38:46,269 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: tat
-2017-05-07 13:38:46,270 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
-2017-05-07 13:38:46,270 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
-2017-05-07 13:38:46,272 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
-2017-05-07 13:38:46,274 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
-2017-05-07 13:38:46,278 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
-2017-05-07 13:38:46,291 INFO c.b.t.c.NodeMapper [main] depth is: 1
-2017-05-07 13:38:46,292 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,306 INFO c.b.t.c.NodeMapper [main] depth is: 2
-2017-05-07 13:38:46,306 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,318 INFO c.b.t.c.NodeMapper [main] depth is: 3
-2017-05-07 13:38:46,318 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,333 INFO c.b.t.c.NodeMapper [main] depth is: 4
-2017-05-07 13:38:46,333 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,345 INFO c.b.t.c.NodeMapper [main] depth is: 5
-2017-05-07 13:38:46,345 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:38:46,398 INFO c.b.t.c.NodeMapper [main] depth is: 6
-2017-05-07 13:38:46,398 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
-2017-05-07 13:38:46,398 INFO c.b.t.c.NodeMapper [main] New page is created for node named: tat
-2017-05-07 13:51:29,527 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
-2017-05-07 13:51:29,534 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
-2017-05-07 13:51:31,842 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
-2017-05-07 13:51:31,843 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
-2017-05-07 13:51:31,859 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
-2017-05-07 13:51:33,459 INFO c.b.t.c.NodeMapper [main] depth is: 1
-2017-05-07 13:51:33,486 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,495 INFO c.b.t.c.NodeMapper [main] depth is: 2
-2017-05-07 13:51:33,495 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,540 INFO c.b.t.c.NodeMapper [main] depth is: 3
-2017-05-07 13:51:33,540 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,549 INFO c.b.t.c.NodeMapper [main] depth is: 4
-2017-05-07 13:51:33,549 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,567 INFO c.b.t.c.NodeMapper [main] depth is: 5
-2017-05-07 13:51:33,568 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,596 INFO c.b.t.c.NodeMapper [main] depth is: 6
-2017-05-07 13:51:33,596 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
-2017-05-07 13:51:33,597 INFO c.b.t.c.NodeMapper [main] New page is created for node named: kak
-2017-05-07 13:51:33,597 INFO c.b.t.c.NodeMapper [main] ====================children=================
-2017-05-07 13:51:33,597 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
-2017-05-07 13:51:33,599 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: tat
-2017-05-07 13:51:33,599 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
-2017-05-07 13:51:33,599 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
-2017-05-07 13:51:33,604 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
-2017-05-07 13:51:33,604 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
-2017-05-07 13:51:33,611 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
-2017-05-07 13:51:33,630 INFO c.b.t.c.NodeMapper [main] depth is: 1
-2017-05-07 13:51:33,631 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,648 INFO c.b.t.c.NodeMapper [main] depth is: 2
-2017-05-07 13:51:33,653 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,694 INFO c.b.t.c.NodeMapper [main] depth is: 3
-2017-05-07 13:51:33,694 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,701 INFO c.b.t.c.NodeMapper [main] depth is: 4
-2017-05-07 13:51:33,725 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,754 INFO c.b.t.c.NodeMapper [main] depth is: 5
-2017-05-07 13:51:33,796 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
-2017-05-07 13:51:33,823 INFO c.b.t.c.NodeMapper [main] depth is: 6
-2017-05-07 13:51:33,823 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
-2017-05-07 13:51:33,823 INFO c.b.t.c.NodeMapper [main] New page is created for node named: tat
+2017-05-11 12:09:35,621 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-05-11 12:09:35,625 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-05-11 12:09:37,514 INFO c.b.t.c.NodeMapper [main] name: test1 doesnot have authority
+2017-05-11 12:09:37,515 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-05-11 12:09:37,515 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-05-11 12:09:37,522 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-05-11 12:09:37,524 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen1
+2017-05-11 12:09:39,081 INFO c.b.t.c.NodeMapper [main] results returned is greater than one
+2017-05-11 12:09:39,085 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,086 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,086 INFO c.b.t.c.NodeMapper [main] overall score: 0.0
+2017-05-11 12:09:39,088 INFO c.b.t.c.NodeMapper [main] score: 0.0 of page: 1
+2017-05-11 12:09:39,088 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,088 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,088 INFO c.b.t.c.NodeMapper [main] overall score: 0.0
+2017-05-11 12:09:39,088 INFO c.b.t.c.NodeMapper [main] score: 0.0 of page: 2
+2017-05-11 12:09:39,091 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,091 INFO c.b.t.c.NodeMapper [main] matched children count 0
+2017-05-11 12:09:39,091 INFO c.b.t.c.NodeMapper [main] overall score: 0.0
+2017-05-11 12:09:39,091 INFO c.b.t.c.NodeMapper [main] score: 0.0 of page: 3
+2017-05-11 12:09:39,091 INFO c.b.t.c.NodeMapper [main] Node with name test1 is mapped to page 1
+2017-05-11 12:09:39,093 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-05-11 12:09:39,094 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-05-11 12:09:39,094 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-05-11 12:09:39,096 INFO c.b.t.c.NodeMapper [main] ====================children=================
+2017-05-11 12:09:39,096 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2017-05-11 12:09:39,096 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: test2
+2017-05-11 12:09:39,099 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-05-11 12:09:39,099 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-05-11 12:09:39,101 INFO c.b.t.c.NodeMapper [main] name: test2 doesnot have authority
+2017-05-11 12:09:39,101 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-05-11 12:09:39,101 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-05-11 12:09:39,111 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-05-11 12:09:39,114 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen2 AND ancestor_ids : 1
+2017-05-11 12:09:39,131 INFO c.b.t.c.NodeMapper [main] results returned is one
+2017-05-11 12:09:39,131 INFO c.b.t.c.NodeMapper [main] Node with name test2 is mapped to page 4
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: test3
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-05-11 12:09:39,132 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-05-11 12:09:39,134 INFO c.b.t.c.NodeMapper [main] name: test3 doesnot have authority
+2017-05-11 12:09:39,136 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-05-11 12:09:39,136 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-05-11 12:09:39,140 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-05-11 12:09:39,140 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,153 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,153 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,153 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,153 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,154 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,172 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,175 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,175 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,176 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,176 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] depth is: 1
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:39,199 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,200 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,208 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,208 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,208 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,209 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,213 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,222 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,222 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,222 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,224 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,225 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] depth is: 2
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,235 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,252 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,252 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,253 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,253 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,265 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,269 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,269 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,269 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,270 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,272 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] depth is: 3
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:39,285 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,299 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,307 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,307 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,307 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,307 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,325 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,336 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,336 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,336 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,337 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,338 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,386 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,388 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,388 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,388 INFO c.b.t.c.NodeMapper [main] depth is: 4
+2017-05-11 12:09:39,388 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:39,389 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,395 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,409 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,409 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,410 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,410 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,415 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,427 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,427 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,427 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,427 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,428 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,459 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,488 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,488 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,488 INFO c.b.t.c.NodeMapper [main] depth is: 5
+2017-05-11 12:09:39,489 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:39,489 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,489 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen3
+2017-05-11 12:09:39,505 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,505 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:39,505 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,505 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,506 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen3
+2017-05-11 12:09:39,513 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,513 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:39,513 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,513 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:39,513 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : testen3
+2017-05-11 12:09:39,523 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,523 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] depth is: 6
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] New page is created for node named: test3
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Parus major Linnaeus, 1788
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-05-11 12:09:39,524 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-05-11 12:09:39,968 INFO c.b.t.c.NodeMapper [main] name: Parus major Linnaeus, 1788 has authorship
+2017-05-11 12:09:39,970 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-05-11 12:09:40,017 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-05-11 12:09:40,034 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name = Parus major Linnaeus, 1788
+2017-05-11 12:09:40,044 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,045 INFO c.b.t.c.NodeMapper [main] Index is: 1
+2017-05-11 12:09:40,045 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,045 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,050 INFO c.b.t.c.NodeMapper [main] Search query is: synonyms : Parus major Linnaeus, 1788
+2017-05-11 12:09:40,067 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,067 INFO c.b.t.c.NodeMapper [main] Index is: 2
+2017-05-11 12:09:40,067 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,067 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,087 INFO c.b.t.c.NodeMapper [main] Search query is: other_synonyms : Parus major Linnaeus, 1788
+2017-05-11 12:09:40,103 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,103 INFO c.b.t.c.NodeMapper [main] Index is: 3
+2017-05-11 12:09:40,103 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,103 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,127 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,141 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,142 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,142 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,142 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,163 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,179 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,179 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,179 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,179 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,201 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,213 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,213 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,213 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,213 INFO c.b.t.c.NodeMapper [main] depth is: 1
+2017-05-11 12:09:40,214 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:40,214 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,233 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,248 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,249 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,250 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,250 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,270 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,282 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,289 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,289 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,289 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,298 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,311 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,311 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,311 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,311 INFO c.b.t.c.NodeMapper [main] depth is: 2
+2017-05-11 12:09:40,313 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:40,313 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,320 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,330 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,331 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,331 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,331 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,335 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,347 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,347 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,347 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,347 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,351 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] depth is: 3
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:40,360 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,372 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,380 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,380 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,380 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,380 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,381 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,416 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,416 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,416 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,416 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,432 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,442 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,443 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,443 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,443 INFO c.b.t.c.NodeMapper [main] depth is: 4
+2017-05-11 12:09:40,443 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:40,443 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,458 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,475 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,475 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,475 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,475 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,489 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,504 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,504 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,504 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,504 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,511 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,528 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,528 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,528 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,529 INFO c.b.t.c.NodeMapper [main] depth is: 5
+2017-05-11 12:09:40,530 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-05-11 12:09:40,530 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,533 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = Homo sapiens Linnaeus
+2017-05-11 12:09:40,545 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,545 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-11 12:09:40,545 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,545 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,547 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,553 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,553 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-05-11 12:09:40,553 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,553 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-11 12:09:40,563 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : Homo sapiens Linnaeus
+2017-05-11 12:09:40,571 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,571 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-05-11 12:09:40,571 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-11 12:09:40,571 INFO c.b.t.c.NodeMapper [main] depth is: 6
+2017-05-11 12:09:40,572 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
+2017-05-11 12:09:40,572 INFO c.b.t.c.NodeMapper [main] New page is created for node named: Parus major Linnaeus, 1788
+2017-05-11 12:09:40,572 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-05-11 12:09:40,572 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-05-11 12:09:40,572 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-05-18 14:44:17,186 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-05-18 14:44:17,190 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-05-18 14:44:20,533 INFO c.b.t.c.NodeMapper [main] name: test1 doesnot have authority
+2017-05-18 14:44:20,534 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-05-18 14:44:20,534 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-05-18 14:44:20,544 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-05-18 14:44:41,394 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = testen1
+2017-05-18 14:44:50,558 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-18 14:44:50,558 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-05-18 14:44:50,558 INFO c.b.t.c.NodeMapper [main] ================================
+2017-05-18 14:44:50,559 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-05-18 14:46:03,721 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : testen1
+2017-06-05 12:07:53,870 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-06-05 12:09:26,545 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-06-05 12:09:26,547 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-06-05 12:09:28,917 INFO c.b.t.c.NodeMapper [main] name: Dictyonema doesnot have authority
+2017-06-05 12:09:28,917 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-06-05 12:09:28,917 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-06-05 12:09:28,936 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-06-05 12:09:28,940 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:30,888 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,888 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:30,888 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,888 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:30,906 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:30,941 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,941 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:30,941 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,941 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:30,944 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:30,957 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,957 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:30,957 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:30,969 INFO c.b.t.c.NodeMapper [main] depth is: 1
+2017-06-05 12:09:30,969 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:09:30,969 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:30,981 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:31,206 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,206 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:31,206 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,206 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,216 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:31,384 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,384 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:31,384 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,385 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,386 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] depth is: 2
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:09:31,406 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,415 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:31,437 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,438 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:31,438 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,439 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,453 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:31,479 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,479 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:31,479 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,479 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,501 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:31,523 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,523 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:31,523 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,523 INFO c.b.t.c.NodeMapper [main] depth is: 3
+2017-06-05 12:09:31,527 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:09:31,527 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,545 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:31,560 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,560 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:31,560 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,560 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,570 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:31,577 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,581 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:31,581 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,581 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,596 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:31,611 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,611 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:31,612 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,612 INFO c.b.t.c.NodeMapper [main] depth is: 4
+2017-06-05 12:09:31,612 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:09:31,612 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,613 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:31,666 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,666 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:31,666 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,666 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,667 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:31,678 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,678 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:31,678 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,678 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,679 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] depth is: 5
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:09:31,716 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,766 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:09:31,808 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,808 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:09:31,808 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,810 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,824 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:09:31,844 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,844 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:09:31,844 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,844 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:09:31,856 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:09:31,870 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,870 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:09:31,878 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:09:31,882 INFO c.b.t.c.NodeMapper [main] depth is: 6
+2017-06-05 12:09:31,882 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
+2017-06-05 12:09:31,882 INFO c.b.t.c.NodeMapper [main] New page is created for node named: Dictyonema
+2017-06-05 12:09:31,883 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-06-05 12:09:31,883 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-06-05 12:09:31,884 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-06-05 12:09:31,884 INFO c.b.t.c.NodeMapper [main] ====================children=================
+2017-06-05 12:09:31,884 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2017-06-05 12:14:30,484 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-06-05 12:14:30,486 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-06-05 12:14:32,600 INFO c.b.t.c.NodeMapper [main] name: Dictyonema doesnot have authority
+2017-06-05 12:14:32,601 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-06-05 12:14:32,601 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-06-05 12:14:32,616 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-06-05 12:14:32,623 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:33,702 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,704 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:33,704 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,704 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,717 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:33,742 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,742 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:33,742 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,742 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,747 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:33,760 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,761 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:33,761 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,761 INFO c.b.t.c.NodeMapper [main] depth is: 1
+2017-06-05 12:14:33,761 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:14:33,766 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,777 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:33,793 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,794 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:33,794 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,794 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,802 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:33,811 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,811 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:33,811 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,812 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,823 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:33,835 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,835 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:33,836 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,836 INFO c.b.t.c.NodeMapper [main] depth is: 2
+2017-06-05 12:14:33,836 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:14:33,836 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,840 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:33,853 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,855 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:33,855 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,856 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,870 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:33,883 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,884 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:33,884 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,884 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,885 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:33,911 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,911 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:33,913 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,914 INFO c.b.t.c.NodeMapper [main] depth is: 3
+2017-06-05 12:14:33,914 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:14:33,914 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,920 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:33,938 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,940 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:33,940 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,941 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,955 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:33,971 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,973 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:33,973 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:33,973 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:33,993 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] depth is: 4
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:14:34,005 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,017 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:34,034 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,034 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:34,034 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,034 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,037 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:34,053 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,053 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:34,053 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,053 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,054 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] depth is: 5
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:14:34,073 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,075 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:14:34,098 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,098 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:14:34,098 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,098 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,111 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:14:34,126 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,126 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:14:34,126 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,126 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:14:34,138 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:14:34,160 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,160 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:14:34,160 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] depth is: 6
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] New page is created for node named: Dictyonema
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-06-05 12:14:34,163 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-06-05 12:14:34,164 INFO c.b.t.c.NodeMapper [main] ====================children=================
+2017-06-05 12:14:34,164 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2017-06-05 12:45:29,449 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2017-06-05 12:45:29,455 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2017-06-05 12:45:31,621 INFO c.b.t.c.NodeMapper [main] name: Dictyonema doesnot have authority
+2017-06-05 12:45:31,622 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2017-06-05 12:45:31,622 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2017-06-05 12:45:31,648 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2017-06-05 12:45:31,657 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,141 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,142 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,142 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,146 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,160 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,185 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,185 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,186 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,186 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,189 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,210 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,211 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,211 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,211 INFO c.b.t.c.NodeMapper [main] depth is: 1
+2017-06-05 12:45:33,211 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:45:33,211 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,223 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,236 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,236 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,236 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,236 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,250 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,261 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,261 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,261 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,261 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,271 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,287 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,287 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,287 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,287 INFO c.b.t.c.NodeMapper [main] depth is: 2
+2017-06-05 12:45:33,288 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:45:33,288 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,289 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,304 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,306 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,306 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,306 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,313 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,329 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,329 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,329 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,330 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,336 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] depth is: 3
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:45:33,357 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,379 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,399 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,399 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,399 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,399 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,417 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,436 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,437 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,437 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,437 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,453 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,468 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,468 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,468 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,469 INFO c.b.t.c.NodeMapper [main] depth is: 4
+2017-06-05 12:45:33,469 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:45:33,469 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,470 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,496 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,497 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,497 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,497 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,508 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,524 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,524 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,528 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,529 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,532 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] depth is: 5
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] depth is less than max depth and will call recursion
+2017-06-05 12:45:33,544 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,556 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = null
+2017-06-05 12:45:33,578 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,578 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2017-06-05 12:45:33,578 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,578 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,593 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : null
+2017-06-05 12:45:33,612 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,613 INFO c.b.t.c.NodeMapper [main] Index is: 5
+2017-06-05 12:45:33,613 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,617 INFO c.b.t.c.NodeMapper [main] Recursive call
+2017-06-05 12:45:33,627 INFO c.b.t.c.NodeMapper [main] Search query is: other_canonical_synonyms : null
+2017-06-05 12:45:33,649 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,649 INFO c.b.t.c.NodeMapper [main] Index is: 6
+2017-06-05 12:45:33,649 INFO c.b.t.c.NodeMapper [main] ================================
+2017-06-05 12:45:33,653 INFO c.b.t.c.NodeMapper [main] depth is: 6
+2017-06-05 12:45:33,653 INFO c.b.t.c.NodeMapper [main] depth is greater than max depth
+2017-06-05 12:45:33,653 INFO c.b.t.c.NodeMapper [main] New page is created for node named: Dictyonema
+2017-06-05 12:45:33,655 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2017-06-05 12:45:33,656 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2017-06-05 12:45:33,656 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2017-06-05 12:45:33,656 INFO c.b.t.c.NodeMapper [main] ====================children=================
+2017-06-05 12:45:33,656 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-07 09:13:48,302 INFO c.b.t.h.GlobalNamesHandler [main] name: test doesnot have authority
+2018-04-16 10:23:53,734 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 13:04:07,771 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 13:52:07,956 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 13:52:07,959 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 13:52:07,965 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: test1
+2018-04-23 13:52:07,967 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-04-23 13:52:07,969 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-04-23 13:52:10,289 INFO c.b.t.h.GlobalNamesHandler [main] name: test1 doesnot have authority
+2018-04-23 13:52:10,290 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-04-23 13:52:10,290 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-04-23 13:52:10,298 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-04-23 13:52:10,301 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-04-23 17:03:18,043 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 17:03:18,053 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-04-23 17:03:18,054 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: test1
+2018-04-23 17:03:18,054 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-04-23 17:03:18,054 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-04-23 17:03:19,836 INFO c.b.t.h.GlobalNamesHandler [main] name: test1 doesnot have authority
+2018-04-23 17:03:19,838 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-04-23 17:03:19,838 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-04-23 17:03:19,843 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-04-23 17:03:19,845 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 

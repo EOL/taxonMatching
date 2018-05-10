@@ -1,11 +1,12 @@
 package com.bibalex.taxonmatcher.handlers;
 
+import com.bibalex.taxonmatcher.controllers.NodeMapper;
 import com.bibalex.taxonmatcher.models.Strategy;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import java.io.FileNotFoundException;
+import org.apache.logging.log4j.Logger;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,9 +17,11 @@ import java.util.ArrayList;
 public class StrategyHandler {
 
     private ArrayList<Strategy> strategies;
+    private static Logger logger;
 
     public StrategyHandler(){
         strategies = new ArrayList<Strategy>();
+        logger = LogHandler.getLogger(NodeMapper.class.getName());
         loadStrategies();
     }
 
@@ -53,14 +56,18 @@ public class StrategyHandler {
     }
 
     public Strategy getNextStrategy(Strategy strategy){
+        logger.info("================================");
         int oldIndex = 0;
         for(Strategy s : strategies){
             if (strategy.getAttribute().equalsIgnoreCase(s.getAttribute()) &&
-                    strategy.getType().equalsIgnoreCase(s.getType()))
+                    strategy.getIndex().equalsIgnoreCase(s.getIndex()))
                 break;
             oldIndex++;
         }
-        return strategies.get(oldIndex+1);
+        oldIndex++;
+        logger.info("Index is: "+ oldIndex);
+        logger.info("================================");
+        return oldIndex > strategies.size() - 1 ? null : strategies.get(oldIndex);
     }
 
 

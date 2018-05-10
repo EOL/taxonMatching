@@ -1,6 +1,8 @@
 package com.bibalex.taxonmatcher.handlers;
 
+import org.apache.logging.log4j.Logger;
 import org.globalnames.parser.ScientificNameParser;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,9 +13,11 @@ import org.json.simple.parser.ParseException;
 public class GlobalNamesHandler {
 
     private JSONParser parser;
+    private static Logger logger;
 
     public GlobalNamesHandler(){
         parser = new JSONParser();
+        logger = LogHandler.getLogger(GlobalNamesHandler.class.getName());
     }
 
     private JSONObject getParsedJson(String name){
@@ -45,7 +49,36 @@ public class GlobalNamesHandler {
         return parseAndGetResult(name, "hybrid");
     }
 
+    public String getCanonicalForm(String name){
+        JSONObject jsonObject = getParsedJson(name);
+        return (Boolean) jsonObject.get("parsed") ? (String) ((JSONObject) jsonObject.get("canonical_name")).get("value") : "";
+    }
+
     public boolean hasAuthority(String name){
-        return parseAndGetResult(name, "authorship");
+        JSONArray nameParts = (JSONArray) getParsedJson(name).get("positions");
+        if (nameParts != null) {
+            for (int i = 0; i < nameParts.size(); i++) {
+                JSONArray partArray = (JSONArray) nameParts.get(i);
+                if (partArray.get(0).toString().contains("author")) {
+                    System.out.println("has authority");
+                    logger.info("name: " + name + " has authorship");
+                    return true;
+                }
+            }
+        }
+        logger.info("name: " + name + " doesnot have authority");
+        System.out.println("will return false");
+        return false;
+    }
+
+    public static void main(String [] args){
+
+//        ResourceHandler.initialize("config.properties");
+//        LogHandler.initializeHandler();
+
+        GlobalNamesHandler gnh = new GlobalNamesHandler();
+//        gnh.hasAuthority("Parus major Linnaeus, 1788");
+        System.out.println(gnh.getCanonicalForm("Parus major Linnaeus, 1788"));
+//        gnh.hasAuthority("test");
     }
 }

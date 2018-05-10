@@ -20,6 +20,7 @@ public class NodeMapper {
     private int maxAncestorDepth;
     private static Logger logger;
     private FileHandler fileHandler;
+    private Neo4jHandler neo4jHandler;
 
     public NodeMapper(){
         strategyHandler = new StrategyHandler();
@@ -30,6 +31,7 @@ public class NodeMapper {
         maxAncestorDepth = Integer.parseInt(ResourceHandler.getPropertyValue("maxAncestorDepth"));
         logger = LogHandler.getLogger(NodeMapper.class.getName());
         fileHandler = new FileHandler();
+        neo4jHandler = new Neo4jHandler();
     }
 
     public void mapAllNodesToPages(ArrayList<Node> rootNodes){
@@ -63,6 +65,7 @@ public class NodeMapper {
             logger.info("mapIfNeeded: before mapNode");
             mapNode(node, usedAncestorDepth, usedStrategy);
         }
+        System.out.println("---------------- has children is ------------- " + node.hasChildren() + " size " + node.getChildren().size());
         if(node.hasChildren()){
             System.out.println("====================children=================");
             logger.info("====================children=================");
@@ -84,7 +87,7 @@ public class NodeMapper {
             }else{
                 System.out.println("map Node : not virus neither surrogate");
                 logger.info("map Node : not virus neither surrogate");
-                ancestor = nodeHandler.matchedAncestor(node.getAncestors(), depth);
+                ancestor = nodeHandler.matchedAncestor(node.getAnecstors(), depth);
             }
             mapUnflaggedNode(node, ancestor, depth, strategy);
         }
@@ -92,6 +95,7 @@ public class NodeMapper {
 
     private void mapUnflaggedNode(Node node, Node ancestor, int depth, Strategy strategy){
         ArrayList<SearchResult> results = searchHandler.getResults(node, strategy, ancestor);
+        Strategy nextStrategy;
         if(results.size() == 1){
             System.out.println("results returned is one");
             logger.info("results returned is one");
@@ -101,22 +105,24 @@ public class NodeMapper {
             logger.info("results returned is greater than one");
             mapToPage(node, findBestMatch(node, results));
         }else{
-            Strategy nextStrategy = strategyHandler.getNextStrategy(strategy);
-            if (nextStrategy != null){
+            nextStrategy = strategyHandler.getNextStrategy(strategy);
+            if (nextStrategy == null) {
                 nextStrategy = strategyHandler.firstNonScientificStrategy();
                 depth++;
                 System.out.println("depth is: " + depth);
                 logger.info("depth is: " + depth);
-                if (depth > maxAncestorDepth){
+                if (depth > maxAncestorDepth) {
                     System.out.println("depth is greater than max depth");
                     logger.info("depth is greater than max depth");
                     unmappedNode(node);
-                }else{
-                    System.out.println("depth is less than max depth and will call recursion");
-                    logger.info("depth is less than max depth and will call recursion");
-                    mapUnflaggedNode(node, ancestor, depth, nextStrategy);
+                    return;
                 }
+                System.out.println("depth is less than max depth and will call recursion");
+                logger.info("depth is less than max depth and will call recursion");
             }
+            System.out.println("Recursive call");
+            logger.info("Recursive call");
+            mapUnflaggedNode(node, ancestor, depth, nextStrategy);
         }
     }
 
@@ -124,7 +130,8 @@ public class NodeMapper {
         ArrayList<MatchingScore> scores = new ArrayList<MatchingScore>();
 
         for(SearchResult result : results){
-            int matchedChildrenCount = matchingScoreHandler.countMatches(result.getChildrenNames(), node.getChildren());
+            int matchedChildrenCount = matchingScoreHandler.countMatches(neo4jHandler.getNodesFromIds(result.getChildren()),
+                    node.getChildren());
             logger.info("matched children count " + matchedChildrenCount);
             int matchedAncestorsCount = matchingScoreHandler.countAncestors(node);
             logger.info("matched children count " + matchedChildrenCount);
@@ -148,7 +155,7 @@ public class NodeMapper {
 
 
     private void mapToPage(Node node, int pageId){
-        node.setPageId(pageId);
+        neo4jHandler.assignPageToNode(node.getGeneratedNodeId(), pageId);
         System.out.println("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
         logger.info("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
         fileHandler.writeToFile("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
@@ -158,6 +165,7 @@ public class NodeMapper {
         System.out.println("New page is created for node named: "+node.getScientificName());
         logger.info("New page is created for node named: "+node.getScientificName());
         fileHandler.writeToFile("New page is created for node named: "+node.getScientificName());
+        neo4jHandler.assignPageToNode(node.getGeneratedNodeId());
       //  Page newPage = new Page();
        // node.setPageId(newPage.getId());
     }

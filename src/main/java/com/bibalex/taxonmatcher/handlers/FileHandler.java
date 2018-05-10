@@ -11,20 +11,26 @@ import java.io.IOException;
  */
 public class FileHandler {
 
-    private FileWriter outputFile;
     private static Logger logger;
 
     public FileHandler(){
         logger = LogHandler.getLogger(NodeMapper.class.getName());
-        try {
-            outputFile = new FileWriter(ResourceHandler.getPropertyValue("outputFileName"));
-        } catch (IOException e) {
-            logger.error("output file exception "+e);
-        }
     }
 
     public void writeToFile(String s){
-        outputFile.write(s);
+        try {
+            FileWriter outputFile = new FileWriter
+                    (ResourceHandler.getPropertyValue("outputFileName"), true);
+            logger.info("After creating file writer");
+            outputFile.write("\n");
+            outputFile.write(s);
+            logger.info("After writing to the file");
+            outputFile.flush();
+            outputFile.close();
+            logger.info("After flushing and closing the file writer");
+        } catch (IOException e) {
+            logger.error("output file exception "+e);
+        }
     }
 
 }

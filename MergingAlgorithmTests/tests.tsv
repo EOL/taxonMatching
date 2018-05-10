@@ -1,0 +1,31 @@
+test-id	new-node	page1	page2	goal	notes
+test1	nn14	dh1	dh2	0	kingdom/partial ancestor match not sufficient to overcome family conflict
+test2	nn1	dh1	dh2	dh1	child match overcomes family conflict in the absence of major ancestry conflict (i.e., kindom conflict involving animalia)
+test3	nn2	dh1	dh2	dh1	partial child match decisive in the absence of other info
+test4	nn3	dh1	dh2	dh1	partial ancestry match decisive in the absence of other info
+test5	nn14	dh13	dh2	dh13	family conflict resolved by ancestry of other node in page from curated hierarchy
+test6	nn14	dh14	dh2	0	family conflict not resolved by ancestry of other node in page from non-curated hierarchy
+test7	nn4	dh1	dh2	0	kingdom match not sufficient to overcome authority conflict
+test8	nn4	dh2	dh3	dh3	synonym with authority match decisive in the absence of major conflicts
+test9	nn4	dh2	dh4	dh4	synonym with authority match decisive, authority string match does not have to be perfect
+test10	nn4	dh2	dh5	dh5	synonym with authority match decisive, authority string match does not have to be perfect
+test11	nn4	dh2	dh6	dh6	synonym with authority match decisive, authority string match does not have to be perfect
+test12	nn4	dh2	dh7	dh7	other node from curated hierarchy synonym match decisive
+test13	nn4	dh2	dh8	0	other node from non-curated hierarchy synonym match not sufficient
+test14	nn5	dh2	dh3	0	authority match cannot overcome kingdom mismatch involving animalia; kingdom match not sufficient to overcome authority mismatch
+test15	nn6	dh9	dh10	0	not enough info to distinguish between homonyms
+test16	nn7	dh9	dh10	dh10	authority match sufficient to distinguish between homonyms
+test17	nn8	dh9	dh10	dh10	abbreviated authority match sufficient to distinguish between homonyms
+test18	nn9	dh9	dh10	dh9	kingdom sufficient to distinguish between homonyms because one is animalia, the other is not
+test19	nn10	dh9	dh10	0	partial ancestor match, but much of ancestry conflicts, most significantly: family conflict
+test20	nn11	dh9	dh10	0	partial ancestor match, but most of ancestry conflicts
+test21	nn12	dh9	dh10	dh10	significant ancestor conflict, but families match
+test22	nn13	dh9	dh10	0	if families conflict, a kingdom match is not sufficient
+test23	nn10	dh9	dh11	dh11	family conflict is neutralized by family match with other node from curated hierarchy, other ancestry conflicts are not significant
+test24	nn10	dh9	dh12	0	family match with other node from non-curated hierarchy cannot neutralize dynamic hierarchy family conflict
+test25	nn15	dh15	dh16	dh15	class/phylum does not constitute a significant rank conflict, any rank conflict involving genus would be significant
+test26	nn16	dh15	dh16	0	never match anything with rank genus to anything that's not rank genus (need to think some more about subgenus situation)
+test27	nn17	dh15	dh16	dh17	author information sufficient to match
+test28	nn18	d17	d18	d18	partial ancestor match in the absence of conflict; kingdom mismatch is just a non-significant rank conflict
+test29	nn19	d17	d18	0	family conflict overrules partical ancestor match
+test30	nn20	d17	d18	d18	authority match overcomes family conflict

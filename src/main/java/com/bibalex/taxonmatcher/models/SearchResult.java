@@ -3,23 +3,41 @@ package com.bibalex.taxonmatcher.models;
 import java.util.ArrayList;
 
 /**
- * Created by amr.morad on 5/3/17.
+ * Created by amr.morad.
  */
 public class SearchResult {
 
+    private int nodeId;
     private int pageId;
-    private ArrayList<String> childrenNames;
+    private ArrayList<Integer> children;
+
+    public SearchResult(int nodeId, int pageId, ArrayList<Integer> children) {
+        this.nodeId = nodeId;
+        this.pageId = pageId;
+        this.children = children;
+    }
+
+    public void setNodeId(int nodeId) {
+        this.nodeId = nodeId;
+    }
+
+    public void setPageId(int pageId) {
+        this.pageId = pageId;
+    }
+
+    public void setChildren(ArrayList<Integer> children) {
+        this.children = children;
+    }
 
     public int getPageId() {
         return pageId;
     }
 
-    public ArrayList<String> getChildrenNames() {
-        return childrenNames;
+    public ArrayList<Integer> getChildren() {
+        return children;
     }
 
-    public SearchResult(int pageId, ArrayList<String> childrenNames) {
-        this.pageId = pageId;
-        this.childrenNames = childrenNames;
+    public int getNodeId() {
+        return nodeId;
     }
 }

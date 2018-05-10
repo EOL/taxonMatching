@@ -1,0 +1,10 @@
+other-node-id	scientificname	rank	synonyms	kingdom	family	genus	ancestors	children	curated
+on1	Dictyonema	genus		Fungi	Meruliaceae		Fungi|Basidiomycota|Agaricomycetes|Polyporales|Meruliaceae	Dictyonema glabratum|Dictyonema thelephora	0
+on2	Dictyonema	genus		Plantae	Meruliaceae		Plantae|Meruliaceae	Dictyonema interruptum (Carmich. ex Hook.) Parmasto	0
+on3	Dictyonema C.A.Agardh						Biota|Fungi|Fungi Incertae sedis		1
+on4	Dictyonema C. A. Agardh in Kunth, 1822	genus	Dictyonema Reinsch 1875	Fungi			Fungi|Basidiomycota|Agaricomycetes	Dictyonema interruptum (Carmich. ex Hook.) Parmasto 1979|Dictyonema irpicinum Mont. 1848|Dictyonema ligulatum (Kremp.) Zahlbr. 1907|Dictyonema thelephora (Spreng.) Zahlbr. 1931	1
+on5	Dictyonema C. A. Agardh in Kunth, 1822	genus	Dictyonema Reinsch 1875	Fungi			Fungi|Basidiomycota|Agaricomycetes	Dictyonema interruptum (Carmich. ex Hook.) Parmasto 1979|Dictyonema irpicinum Mont. 1848|Dictyonema ligulatum (Kremp.) Zahlbr. 1907|Dictyonema thelephora (Spreng.) Zahlbr. 1931	0
+on6	Agathis montana	species		Plantae	Agathidaceae		Plantae|Coniferopsida|Coniferales|Agathidaceae		1
+on7	Agathis montana	species		Plantae	Agathidaceae		Plantae|Coniferopsida|Coniferales|Agathidaceae		0
+on8	Dictyonema	genus		Fungi	Atheliaceae		Fungi|Basidiomycota|Agaricomycetes|Polyporales|Atheliaceae	Dictyonema glabratum|Dictyonema thelephora	1
+on9	Dictyonema	genus		Fungi	Atheliaceae		Fungi|Basidiomycota|Agaricomycetes|Polyporales|Atheliaceae	Dictyonema glabratum|Dictyonema thelephora	0

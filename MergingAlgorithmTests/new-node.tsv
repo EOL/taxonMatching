@@ -1,0 +1,21 @@
+new-node-id	scientificname	rank	synonyms	kingdom	family	genus	ancestors	children
+nn1	Dictyonema	genus		Fungi	Atheliaceae Jülich		Fungi Bartling|Basidiomycota Whittaker ex Moore|Agaricomycotina R. Bauer, Begerow, J.P. Sampaio, M. Weiss & Oberwinkler|Agaricomycetes Doweld|Agaricomycetidae Parmasto|Atheliales Jülich|Atheliaceae Jülich	Dictyonema erectum Berkeley|Dictyonema galapagoense Yánez, Dal-Forno & Bungartz|Dictyonema hernandezii Lücking, Lawrey & Dal-Forno|Dictyonema hirsutum Moncada & Lücking|Dictyonema irpicinum Montagne|Dictyonema japonicum Asahina|Dictyonema laxum Müller Arg.|Dictyonema ligulatum (Krempelhuber) Zahlbruckner|Dictyonema melvinii Chaves, Lücking & Umaña|Dictyonema membranaceum C. Agardh|Dictyonema minus Lücking, E. Navarro & Sipman|Dictyonema moorei (Nylander) Henssen|Dictyonema pectinatum Dal-Forno, Yánez & Lücking|Dictyonema phyllogenum (Müller Arg.) Zahlbruckner|Dictyonema reticulatum (Berkeley) Zahlbruckner|Dictyonema sericeum (Swartz) Berkeley & M.A. Curtis|Dictyonema zoophytarum Reinsch
+nn2	Dictyonema	genus						Dictyonema glabratum
+nn3	Dictyonema						Fungi|Basidiomycota 	
+nn4	Dictyonema Reinsch, 1875	genus		Fungi			Fungi	
+nn5	Dictyonema Reinsch, 1875	genus		Animalia			Animalia	
+nn6	Agathis montana	species				Agathis		
+nn7	Agathis montana de Laubenfels	species						
+nn8	Agathis montana de Laub.	species						
+nn9	Agathis montana			Animalia				
+nn10	Agathis montana	species			Agathidaceae		Tracheophyta|Pinopsida|Pinales|Agathidaceae	
+nn11	Agathis montana	species					Tracheophyta|Pinopsida|Pinales	
+nn12	Agathis montana	species			Araucariaceae		Tracheophyta|Pinopsida|Pinales|Araucariaceae	
+nn13	Agathis montana	species		Archaeplastida	Agathidaceae		Archaeplastida|Tracheophyta|Pinopsida|Pinales|Agathidaceae	
+nn14	Dictyonema	genus			Atheliaceae Jülich		Fungi Bartling|Basidiomycota Whittaker ex Moore|Agaricomycotina R. Bauer, Begerow, J.P. Sampaio, M. Weiss & Oberwinkler|Agaricomycetes Doweld|Agaricomycetidae Parmasto|Atheliales Jülich|Atheliaceae Jülich	
+nn15	Acanthocephala	phylum		Animalia			Animalia	
+nn16	Acanthocephala	subfamily		Animalia	Coreidae		Animalia|Insecta|Heteroptera|Coreidae	
+nn17	Acanthocephala Laporte, 1833			Animalia				
+nn18	Bursaria	genus		Protista			Protista|Ciliophora	
+nn19	Bursaria	genus		Protista	Bursariaceae		Protista|Ciliophora|Bursariaceae	
+nn20	Bursaria Müller 1773	genus			Bursariaceae		Protista|Ciliophora|Bursariaceae	
