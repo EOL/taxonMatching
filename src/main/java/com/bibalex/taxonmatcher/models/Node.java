@@ -3,12 +3,14 @@ package com.bibalex.taxonmatcher.models;
 
 import com.bibalex.taxonmatcher.handlers.Neo4jHandler;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 /**
  * Created by Amr.Morad
  */
-public class Node {
+public class Node implements Serializable {
 
     String nodeId;
     int resourceId;
@@ -20,10 +22,14 @@ public class Node {
     String acceptedNodeId;
     int acceptedNodeGeneratedId;
     int pageId;
-    Neo4jHandler neo4jHandler;
+    long created_at;
+    long updated_at;
+    Neo4jHandler neo4jHandler= new Neo4jHandler();
+//    Neo4jHandler neo4jHandler;
 
+    public Node(){}
     public Node(String nodeId, int resourceId, String scientificName, int generatedNodeId, String rank, int parentGeneratedNodeId,
-                String parentNodeId, String acceptedNodeId, int acceptedNodeGeneratedId, int pageId) {
+                String parentNodeId, String acceptedNodeId, int acceptedNodeGeneratedId, int pageId, int created_at, int updated_at) {
         this.nodeId = nodeId;
         this.resourceId = resourceId;
         this.scientificName = scientificName;
@@ -34,7 +40,9 @@ public class Node {
         this.acceptedNodeId = acceptedNodeId;
         this.acceptedNodeGeneratedId = acceptedNodeGeneratedId;
         this.pageId = pageId;
-        neo4jHandler = new Neo4jHandler();
+        this.created_at = created_at;
+        this.updated_at = updated_at;
+//        neo4jHandler = new Neo4jHandler();
     }
 
     public Node(int resourceId, String nodeId, String scientificName, String rank, int parentGeneratedNodeId) {
@@ -150,14 +158,36 @@ public class Node {
     }
 
     public boolean hasChildren(){
-        return neo4jHandler.hasChildren(this.generatedNodeId);
+       return neo4jHandler.hasChildren(this.generatedNodeId);
     }
 
     public ArrayList<Node> getChildren(){
         return neo4jHandler.getChildren(this.generatedNodeId);
     }
 
-    public ArrayList<Node> getAnecstors(){
+    public ArrayList<Node> getAncestors(){
         return neo4jHandler.getAncestors(this.generatedNodeId);
     }
+
+    public long getCreated_at()
+    {
+        return created_at;
+    }
+
+    public void setCreated_at(long created_at)
+    {
+        this.created_at = created_at;
+    }
+
+    public long getUpdated_at()
+    {
+        return updated_at;
+    }
+
+    public void setUpdated_at(long updated_at)
+    {
+        this.updated_at = updated_at;
+    }
+
+
 }

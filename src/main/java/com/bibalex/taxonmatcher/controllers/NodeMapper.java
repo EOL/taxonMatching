@@ -2,10 +2,12 @@ package com.bibalex.taxonmatcher.controllers;
 
 import com.bibalex.taxonmatcher.handlers.*;
 import com.bibalex.taxonmatcher.models.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 
 /**
  * Created by Amr.Morad
@@ -35,10 +37,12 @@ public class NodeMapper {
     }
 
     public void mapAllNodesToPages(ArrayList<Node> rootNodes){
-        mapNodes(rootNodes);
+       ArrayList<Node> mappedRootNodes= nodeMapper(rootNodes);
+        mapNodes(mappedRootNodes);
     }
 
     public void mapNodes(ArrayList<Node> rootNodes){
+
         System.out.println("mapNodes");
         logger.info("Inside Map Node method");
         for(Node node : rootNodes){
@@ -65,12 +69,12 @@ public class NodeMapper {
             logger.info("mapIfNeeded: before mapNode");
             mapNode(node, usedAncestorDepth, usedStrategy);
         }
-        System.out.println("---------------- has children is ------------- " + node.hasChildren() + " size " + node.getChildren().size());
-        if(node.hasChildren()){
-            System.out.println("====================children=================");
-            logger.info("====================children=================");
-            mapNodes(node.getChildren());
-        }
+//        System.out.println("---------------- has children is ------------- " + node.hasChildren() + " size " + node.getChildren().size());
+//        if(node.hasChildren()){
+//            System.out.println("====================children=================");
+//            logger.info("====================children=================");
+//            mapNodes(node.getChildren());
+//        }
     }
 
     private void mapNode(Node node, int depth, Strategy strategy){
@@ -87,7 +91,7 @@ public class NodeMapper {
             }else{
                 System.out.println("map Node : not virus neither surrogate");
                 logger.info("map Node : not virus neither surrogate");
-                ancestor = nodeHandler.matchedAncestor(node.getAnecstors(), depth);
+             ancestor = nodeHandler.matchedAncestor(nodeMapper(node.getAncestors()), depth);
             }
             mapUnflaggedNode(node, ancestor, depth, strategy);
         }
@@ -168,6 +172,18 @@ public class NodeMapper {
         neo4jHandler.assignPageToNode(node.getGeneratedNodeId());
       //  Page newPage = new Page();
        // node.setPageId(newPage.getId());
+    }
+
+    public ArrayList<Node> nodeMapper(ArrayList<Node> beforeMapping)
+    {
+        ArrayList<Node> afterMapping = new ArrayList<Node>();
+        ObjectMapper mapper = new ObjectMapper();
+        for(int i =0 ; i<beforeMapping.size();i++)
+        {
+            Node n = mapper.convertValue(beforeMapping.get(i), Node.class);
+            afterMapping.add(n);
+        }
+        return afterMapping;
     }
 
 }

@@ -15,6 +15,7 @@ public abstract class PropertyLoader {
     private static final String SUFFIX = ".properties";
 
     public static Properties loadProperties(String name, ClassLoader loader) {
+
         if (name == null)
             throw new IllegalArgumentException("null input: name");
 

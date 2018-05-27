@@ -650,3 +650,395 @@
 2018-04-23 17:03:19,838 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
 2018-04-23 17:03:19,843 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
 2018-04-23 17:03:19,845 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-21 13:34:54,472 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-21 13:41:08,829 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-21 13:42:37,710 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-21 13:43:39,503 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-21 13:54:08,307 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-22 10:22:16,070 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-22 10:23:31,787 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 11:10:44,870 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 11:10:44,885 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 11:10:44,885 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 11:12:09,484 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 11:12:09,504 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 11:12:09,504 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 11:12:35,754 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 11:12:35,761 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 11:12:35,763 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: null
+2018-05-23 13:29:35,606 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 13:29:35,610 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 13:29:35,610 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 13:29:35,611 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 13:30:50,541 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 13:30:50,552 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 13:30:50,553 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 13:30:50,553 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 13:30:52,672 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 13:30:52,674 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 13:35:41,648 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 13:35:41,660 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 13:35:41,661 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 13:35:41,661 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 13:35:42,639 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 13:35:42,651 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 13:35:42,651 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 13:35:42,655 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 13:57:21,358 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 13:57:21,370 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 13:57:21,370 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 13:57:21,371 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 13:57:22,880 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 13:57:22,888 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 13:57:22,888 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 13:57:22,894 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:12:13,653 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:12:13,674 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:12:13,674 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:12:13,675 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:12:15,039 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:12:15,045 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:12:15,046 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:12:15,053 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:13:09,423 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:13:09,436 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:13:09,436 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:13:09,438 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:13:10,657 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:13:10,660 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:13:10,660 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:13:10,667 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:20:17,590 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:20:17,598 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:20:17,598 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:20:17,599 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:20:18,572 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:20:18,572 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:20:18,573 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:20:18,587 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:22:21,583 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:22:21,594 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:22:21,594 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:22:21,597 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:22:22,585 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:22:22,585 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:22:22,585 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:22:22,597 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:23:09,878 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:23:09,909 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:23:09,909 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:23:09,910 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:23:11,412 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:23:11,415 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:23:11,415 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:23:11,435 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:24:00,924 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:24:00,932 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:24:00,933 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:24:00,934 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:24:02,255 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:24:02,255 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:24:02,255 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:24:02,261 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:24:59,371 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:24:59,384 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:24:59,384 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:24:59,394 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:25:01,005 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:25:01,006 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:25:01,006 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:25:01,011 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:25:33,721 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:25:33,733 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:25:33,734 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:25:33,735 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:25:34,803 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:25:34,806 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:25:34,806 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:25:34,813 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-23 14:26:51,539 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-23 14:26:51,551 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-23 14:26:51,551 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-23 14:26:51,552 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-23 14:26:52,545 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-23 14:26:52,548 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-23 14:26:52,549 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-23 14:26:52,557 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 10:56:48,926 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 10:56:48,929 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 10:56:48,929 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 10:56:48,929 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 10:56:50,125 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 10:56:50,126 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 10:56:50,126 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 10:56:50,131 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 11:01:10,290 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 11:01:10,310 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 11:01:10,310 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 11:01:10,316 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 11:01:11,377 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 11:01:11,378 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 11:01:11,378 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 11:01:11,383 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 11:02:42,668 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 11:02:42,689 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 11:02:42,689 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 11:02:42,689 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 11:02:43,899 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 11:02:43,900 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 11:02:43,901 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 11:02:43,909 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 11:03:33,539 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 11:03:33,552 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 11:03:33,552 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 11:03:33,553 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 11:03:34,479 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 11:03:34,480 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 11:03:34,480 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 11:03:34,484 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 13:06:26,346 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 13:06:26,360 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 13:06:26,360 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 13:06:26,360 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 13:06:27,422 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 13:06:27,425 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 13:06:27,425 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 13:06:27,429 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 13:06:27,494 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-24 13:06:28,590 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:06:28,591 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2018-05-24 13:06:28,592 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:06:28,592 INFO c.b.t.c.NodeMapper [main] Recursive call
+2018-05-24 13:06:28,600 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : 
+2018-05-24 13:37:38,510 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 13:37:38,516 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 13:37:38,516 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 13:37:38,516 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 13:37:39,798 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 13:37:39,798 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 13:37:39,798 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 13:37:39,807 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 13:37:39,881 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-24 13:37:41,279 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:37:41,296 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2018-05-24 13:37:41,296 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:37:41,297 INFO c.b.t.c.NodeMapper [main] Recursive call
+2018-05-24 13:37:41,310 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : 
+2018-05-24 13:39:21,342 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 13:39:21,355 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 13:39:21,355 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 13:39:21,355 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 13:39:22,271 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 13:39:22,271 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 13:39:22,271 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 13:39:22,278 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 13:39:22,327 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-24 13:39:23,624 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:39:23,631 INFO c.b.t.c.NodeMapper [main] Index is: 4
+2018-05-24 13:39:23,632 INFO c.b.t.c.NodeMapper [main] ================================
+2018-05-24 13:39:23,632 INFO c.b.t.c.NodeMapper [main] Recursive call
+2018-05-24 13:39:23,647 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_synonyms : 
+2018-05-24 14:09:30,606 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 14:09:30,617 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 14:09:30,617 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 14:09:30,621 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 14:09:32,251 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 14:09:32,252 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 14:09:32,252 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 14:09:32,269 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 14:09:32,334 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-24 14:11:09,553 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-24 14:11:09,564 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: name1
+2018-05-24 14:11:09,564 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-24 14:11:09,564 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-24 14:11:10,649 INFO c.b.t.h.GlobalNamesHandler [main] name: name1 doesnot have authority
+2018-05-24 14:11:10,650 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: node does not have authority
+2018-05-24 14:11:10,650 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-24 14:11:10,656 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-24 14:11:10,681 INFO c.b.t.c.NodeMapper [main] Search query is: canonical_name = 
+2018-05-27 11:55:11,028 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 11:55:11,041 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Ascilla coriacea E. Haeckel, 1872
+2018-05-27 11:55:11,041 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 11:55:11,043 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 11:55:13,282 INFO c.b.t.h.GlobalNamesHandler [main] name: Ascilla coriacea E. Haeckel, 1872 has authorship
+2018-05-27 11:55:13,283 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 11:55:13,369 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 11:55:13,906 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name = Ascilla coriacea E. Haeckel, 1872
+2018-05-27 12:23:27,976 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 12:23:27,993 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:23:27,994 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 12:23:27,994 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 12:23:29,342 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 12:23:29,344 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 12:23:29,369 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 12:23:29,462 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name = Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:27:06,771 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 12:27:06,779 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:27:06,782 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 12:27:06,782 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 12:27:07,977 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 12:27:07,977 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 12:27:08,000 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 12:27:08,069 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name = Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:32:53,449 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 12:32:53,465 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:32:53,466 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 12:32:53,466 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 12:32:54,965 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 12:32:54,965 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 12:32:54,984 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 12:32:55,063 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name = "Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 12:35:50,244 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 12:35:50,256 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 12:35:50,257 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 12:35:50,257 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 12:35:51,964 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 12:35:51,964 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 12:35:51,994 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 12:35:52,093 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:11:42,159 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:11:42,171 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:11:42,171 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:11:42,171 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:11:44,040 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:11:44,041 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:11:44,105 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:11:44,187 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:18:35,500 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:18:35,507 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:18:35,508 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:18:35,508 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:18:36,667 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:18:36,668 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:18:36,687 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:18:36,786 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:19:37,313 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:19:37,322 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:19:37,327 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:19:37,327 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:19:38,204 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:19:38,204 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:19:38,237 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:19:38,300 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:24:00,066 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:24:00,073 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:24:00,076 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:24:00,076 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:24:02,017 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:24:02,018 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:24:02,067 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:24:02,153 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:26:02,544 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:26:02,555 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:26:02,557 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:26:02,557 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:26:03,572 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:26:03,572 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:26:03,609 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:26:03,691 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:27:35,477 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:27:35,489 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:27:35,489 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:27:35,489 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:27:36,652 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:27:36,652 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:27:36,675 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:27:36,750 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:28:40,695 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:28:40,713 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:28:40,716 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:28:40,716 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:28:42,308 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:28:42,308 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:28:42,349 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:28:42,397 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:29:38,011 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:29:38,038 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:29:38,039 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:29:38,040 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:29:39,260 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:29:39,260 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:29:39,286 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:29:39,359 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:30:39,215 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:30:39,223 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:30:39,224 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:30:39,225 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:30:41,497 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:30:41,498 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:30:41,539 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:30:41,614 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:31:38,256 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:31:38,264 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:31:38,264 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:31:38,264 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:31:39,292 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:31:39,292 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:31:39,318 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:31:39,370 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:34:11,580 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:34:11,599 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:34:11,601 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:34:11,601 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:34:12,689 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:34:12,689 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:34:12,713 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:34:12,783 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:35:24,568 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:35:24,572 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:35:24,583 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:35:24,583 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:35:25,583 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:35:25,584 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:35:25,609 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:35:25,666 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:36:25,710 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:36:25,713 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:36:25,714 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:36:25,715 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:36:27,258 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:36:27,258 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:36:27,307 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:36:27,384 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:38:20,092 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:38:20,099 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:38:20,100 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:38:20,100 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:38:21,110 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:38:21,110 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:38:21,149 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:38:21,226 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 13:40:34,613 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 13:40:34,627 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 13:40:34,629 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 13:40:34,629 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 13:40:35,860 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 13:40:35,860 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 13:40:35,885 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 13:40:35,962 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 14:05:43,182 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 14:05:43,189 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 14:05:43,189 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 14:05:43,189 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 14:05:44,409 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 14:05:44,410 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 14:05:44,471 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 14:05:44,535 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 14:05:45,773 INFO c.b.t.c.NodeMapper [main] results returned is one
+2018-05-27 14:05:45,900 INFO c.b.t.c.NodeMapper [main] Node with name Jenningsina paffrathensis Krommelbein, 1954 is mapped to page 0
+2018-05-27 14:05:45,900 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2018-05-27 14:05:45,900 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2018-05-27 14:05:45,907 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer
+2018-05-27 14:10:18,653 INFO c.b.t.c.NodeMapper [main] Inside Map Node method
+2018-05-27 14:10:18,656 INFO c.b.t.c.NodeMapper [main] mapNodes: mapping node: Jenningsina paffrathensis Krommelbein, 1954
+2018-05-27 14:10:18,657 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: used strategy is: scientific_name
+2018-05-27 14:10:18,657 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: needs to be mapped
+2018-05-27 14:10:19,511 INFO c.b.t.h.GlobalNamesHandler [main] name: Jenningsina paffrathensis Krommelbein, 1954 has authorship
+2018-05-27 14:10:19,511 INFO c.b.t.c.NodeMapper [main] mapIfNeeded: before mapNode
+2018-05-27 14:10:19,534 INFO c.b.t.c.NodeMapper [main] map Node : not virus neither surrogate
+2018-05-27 14:10:19,611 INFO c.b.t.c.NodeMapper [main] Search query is: scientific_name:"Jenningsina paffrathensis Krommelbein, 1954"
+2018-05-27 14:10:20,943 INFO c.b.t.c.NodeMapper [main] results returned is one
+2018-05-27 14:10:21,180 INFO c.b.t.c.NodeMapper [main] Node with name Jenningsina paffrathensis Krommelbein, 1954 is mapped to page 0
+2018-05-27 14:10:21,180 INFO c.b.t.c.NodeMapper [main] After creating file writer
+2018-05-27 14:10:21,180 INFO c.b.t.c.NodeMapper [main] After writing to the file
+2018-05-27 14:10:21,180 INFO c.b.t.c.NodeMapper [main] After flushing and closing the file writer

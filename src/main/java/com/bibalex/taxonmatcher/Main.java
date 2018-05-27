@@ -15,8 +15,14 @@ public class Main {
 	// write your code here
         ResourceHandler.initialize("config.properties");
         LogHandler.initializeHandler();
-
         Neo4jHandler neo4jHandler = new Neo4jHandler();
+//        neo4jHandler.getRootNodes(363);
+//        neo4jHandler.getChildren(130);
+//        neo4jHandler.getAncestors(20);
+//        neo4jHandler.hasChildren(3);
+//        neo4jHandler.assignPageToNode(10,3);
+
+
         NodeMapper nodeMapper = new NodeMapper();
         nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(1));
 
@@ -28,15 +34,20 @@ public class Main {
 //        ArrayList<Node> children = new ArrayList<Node>();
 //        String nodeId, int resourceId, String scientificName, int generatedNodeId, String rank, int parentGeneratedNodeId,
 //        String parentNodeId, String acceptedNodeId, int acceptedNodeGeneratedId, int pageId
-        Node child = new Node("t_2", 1, "test2",2,"phylum", 1,"t_1", "t_2", 2, 2);
-        Node parent = new Node("t_1", 1, "test1",1,"kingdom", -1,"", "t_1", 1, 1);
 
-        ArrayList<Node> test = new ArrayList<Node>();
-        test.add(parent);
+//        =====================================
+//        Node child = new Node("t_2", 1, "test2",2,"phylum", 1,"t_1", "t_2", 2, 2);
+//        Node parent = new Node("t_1", 1, "test1",1,"kingdom", -1,"", "t_1", 1, 1);
+//
+//        ArrayList<Node> test = new ArrayList<Node>();
+//        test.add(parent);
+//
+//        child.setParentNodeId(parent.getParentNodeId());
+//        child.setParentGeneratedNodeId(parent.getParentGeneratedNodeId());
+//        nodeMapper.mapAllNodesToPages(test);
+//        ===========================
 
-        child.setParentNodeId(parent.getParentNodeId());
-        child.setParentGeneratedNodeId(parent.getParentGeneratedNodeId());
-        nodeMapper.mapAllNodesToPages(test);
+
 //        Node anotherChild = new Node(3, 1,1,"test3","testen3","kingdom");
 //        Node newChild = new Node(4,1,1,"Parus major Linnaeus, 1788",
 //                "Homo sapiens Linnaeus", "kingdom");

@@ -24,6 +24,7 @@ public class SolrHandler {
         zkHostString = ResourceHandler.getPropertyValue("zookeeperHost");
         defaultCollection = ResourceHandler.getPropertyValue("defaultCollection");
         solr = new CloudSolrClient(zkHostString);
+//        solr= new CloudSolrClient.Builder().withZkHost(zkHostString).build();
         solr.setDefaultCollection(defaultCollection);
         logger = LogHandler.getLogger(NodeMapper.class.getName());
     }
@@ -56,6 +57,7 @@ public class SolrHandler {
 
     public static void main(String [] args){
         SolrHandler sh = new SolrHandler();
+
     }
 
 }

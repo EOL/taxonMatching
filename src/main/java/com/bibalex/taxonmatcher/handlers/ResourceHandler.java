@@ -7,6 +7,7 @@ import com.bibalex.taxonmatcher.util.PropertyLoader;
  * Created by Amr.Morad
  */
 public class ResourceHandler {
+
     private static Properties props = new Properties();
 
     public static void initialize(String propFileName){

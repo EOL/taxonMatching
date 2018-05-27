@@ -32,9 +32,13 @@ public class SearchHandler {
         String scientificNameAttr = "scientific_name";
         if (strategy != null){
             searchQuery += strategy.getIndex();
-            searchQuery += strategy.getType().equalsIgnoreCase("in") ? " : " : " = ";
+//            searchQuery += strategy.getType().equalsIgnoreCase("in") ? " : " : " = ";
+            searchQuery += ":";
+            searchQuery += '"';
             searchQuery += strategy.getAttribute().equalsIgnoreCase(scientificNameAttr) ?
                     node.getScientificName() : globalNameHandler.getCanonicalForm(node.getScientificName());
+            searchQuery += '"';
+            //not finalized
             if (ancestor != null && !strategy.getAttribute().equalsIgnoreCase(scientificNameAttr)){
                 //case other ancestor will not be valid in the code
                 searchQuery += " AND ancestor_ids : " + ancestor.getGeneratedNodeId();
@@ -54,11 +58,12 @@ public class SearchHandler {
     public ArrayList<SearchResult> getResults(Node node, Strategy strategy, Node ancestor){
         String searchQuery = buildSearchQuery(node, strategy, ancestor);
         SolrDocumentList solrResultDocuments = solrHandler.performQuery(searchQuery);
+//        System.out.println("tttttttttt"+ solrResultDocuments.toString());
         ArrayList<SearchResult> results = new ArrayList<SearchResult>();
         for(SolrDocument document : solrResultDocuments){
-            ArrayList<Integer> children = castObjectsCollectionToIntegerList(document.getFieldValues("children"));
-            SearchResult result = new SearchResult(Integer.parseInt(document.getFieldValue("pageId").
-                    toString()), Integer.parseInt(document.getFieldValue("id").
+           ArrayList<Integer> children = castObjectsCollectionToIntegerList(document.getFieldValues("children_ids"));
+            SearchResult result = new SearchResult(Integer.parseInt(document.getFieldValue("id").
+                    toString()), Integer.parseInt(document.getFieldValue("page_id").
                     toString()), children);
             results.add(result);
         }
@@ -68,7 +73,9 @@ public class SearchHandler {
     private ArrayList<Integer> castObjectsCollectionToIntegerList(Collection<Object> childrenCollection){
         ArrayList<Integer> children = new ArrayList<Integer>();
         for(Object child : childrenCollection){
-            children.add((Integer) child);
+            String child_string= child.toString();
+            children.add(Integer.valueOf(child_string));
+//            children.add((Integer) child);
         }
         return children;
     }

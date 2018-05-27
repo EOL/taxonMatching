@@ -34,12 +34,12 @@ public class MatchingScoreHandler {
 
     public int countAncestors(Node node){
         int count = 0;
-        if (node != null && node.getAnecstors() != null) {
-            for (Node n : node.getAnecstors()) {
+        if (node != null && node.getAncestors() != null) {
+            for (Node n : node.getAncestors()) {
                 if (n.getPageId() != 0)
                     count++;
             }
-            return matchingAncestorsScore(count, node.getAnecstors().size());
+            return matchingAncestorsScore(count, node.getAncestors().size());
         }
         return 0;
     }
