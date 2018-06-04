@@ -69,12 +69,13 @@ public class NodeMapper {
             logger.info("mapIfNeeded: before mapNode");
             mapNode(node, usedAncestorDepth, usedStrategy);
         }
-//        System.out.println("---------------- has children is ------------- " + node.hasChildren() + " size " + node.getChildren().size());
-//        if(node.hasChildren()){
-//            System.out.println("====================children=================");
-//            logger.info("====================children=================");
-//            mapNodes(node.getChildren());
-//        }
+        System.out.println("---------------- has children is ------------- " + node.hasChildren() + " size " + node.getChildren().size());
+        if(node.hasChildren()){
+            System.out.println("====================children=================");
+
+            logger.info("====================children=================");
+            mapNodes(nodeMapper(node.getChildren()));
+        }
     }
 
     private void mapNode(Node node, int depth, Strategy strategy){
@@ -87,11 +88,13 @@ public class NodeMapper {
             if (globalNameHandler.isVirus(node.getScientificName())){
                 System.out.println("map node: virus");
                 logger.info("map node: virus");
-                ancestor = nodeHandler.nativeVirus();
+                //not finalized as we need ancestor to be arraylist
+                ancestor = nodeMapper(nodeHandler.nativeVirus()).get(0);
             }else{
                 System.out.println("map Node : not virus neither surrogate");
                 logger.info("map Node : not virus neither surrogate");
              ancestor = nodeHandler.matchedAncestor(nodeMapper(node.getAncestors()), depth);
+
             }
             mapUnflaggedNode(node, ancestor, depth, strategy);
         }
@@ -103,11 +106,12 @@ public class NodeMapper {
         if(results.size() == 1){
             System.out.println("results returned is one");
             logger.info("results returned is one");
-            mapToPage(node, results.get(0).getPageId());
+          node =  mapToPage(node, results.get(0).getPageId());
         }else if(results.size() > 1){
             System.out.println("results returned is greater than one");
             logger.info("results returned is greater than one");
-            mapToPage(node, findBestMatch(node, results));
+            System.out.println(findBestMatch(node, results));
+            node = mapToPage(node, findBestMatch(node, results));
         }else{
             nextStrategy = strategyHandler.getNextStrategy(strategy);
             if (nextStrategy == null) {
@@ -134,42 +138,47 @@ public class NodeMapper {
         ArrayList<MatchingScore> scores = new ArrayList<MatchingScore>();
 
         for(SearchResult result : results){
-            int matchedChildrenCount = matchingScoreHandler.countMatches(neo4jHandler.getNodesFromIds(result.getChildren()),
-                    node.getChildren());
+            System.out.println(neo4jHandler.getNodesFromIds(result.getChildren()));
+            int matchedChildrenCount = matchingScoreHandler.countMatches(nodeMapper(neo4jHandler.getNodesFromIds(result.getChildren())),nodeMapper(node.getChildren()));
+            System.out.println("**********************************************************************************");
             logger.info("matched children count " + matchedChildrenCount);
-            int matchedAncestorsCount = matchingScoreHandler.countAncestors(node);
-            logger.info("matched children count " + matchedChildrenCount);
+            int matchedAncestorsCount = matchingScoreHandler.countAncestors(nodeMapper(neo4jHandler.getNodesFromIds(result.getAncestors())));
+//            int matchedAncestorsCount = matchingScoreHandler.countAncestors(node);
+            logger.info("matched Ancestors count " + matchedAncestorsCount);
             double overallScore = matchingScoreHandler.calculateScore(matchedChildrenCount, matchedAncestorsCount);
             logger.info("overall score: "+overallScore);
             MatchingScore score = new MatchingScore(matchedChildrenCount,
                     matchedAncestorsCount, overallScore, result.getPageId());
             logger.info("score: "+score.getScore() + " of page: "+score.getPageId());
+            System.out.println("**********************************************************************************");
             scores.add(score);
         }
 
-        Collections.sort(scores, new Comparator<MatchingScore>(){
+        Collections.sort(scores,new Comparator<MatchingScore>(){
             public int compare(MatchingScore score1, MatchingScore score2)
             {
                 return  Double.compare(score1.getScore(), score2.getScore());
             }
         });
-        return scores.get(0).getPageId();
+
+        return scores.get(scores.size()-1).getPageId();
+
     }
 
-
-
-    private void mapToPage(Node node, int pageId){
-        neo4jHandler.assignPageToNode(node.getGeneratedNodeId(), pageId);
+    private Node mapToPage(Node node, int pageId){
+        boolean response =neo4jHandler.assignPageToNode(node.getGeneratedNodeId(), pageId);
+        if (response ==true){node.setPageId(pageId);}
         System.out.println("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
         logger.info("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
         fileHandler.writeToFile("Node with name " + node.getScientificName() + " is mapped to page "+node.getPageId());
+        return node;
     }
 
     private void unmappedNode(Node node){
         System.out.println("New page is created for node named: "+node.getScientificName());
         logger.info("New page is created for node named: "+node.getScientificName());
         fileHandler.writeToFile("New page is created for node named: "+node.getScientificName());
-        neo4jHandler.assignPageToNode(node.getGeneratedNodeId());
+        int page_id = neo4jHandler.assignPageToNode(node.getGeneratedNodeId());
       //  Page newPage = new Page();
        // node.setPageId(newPage.getId());
     }

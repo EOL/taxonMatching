@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Neo4jHandler {
 
     public ArrayList<Node> getChildren(int generatedNodeId){
-        Object response = RestClientHandler.doConnection(ResourceHandler.getPropertyValue("getChildren"), generatedNodeId,"generatedNodeId", null , null);
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("getChildren"), generatedNodeId,"generatedNodeId", null , null);
         System.out.println("===============================");
         System.out.println("returned children nodes " + response);
         System.out.println("===============================");
@@ -18,7 +18,7 @@ public class Neo4jHandler {
     }
 
     public boolean hasChildren(int generatedNodeId){
-        Object response = RestClientHandler.doConnection(ResourceHandler.getPropertyValue("hasChildren"), generatedNodeId,"generatedNodeId", null , null);
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("hasChildren"), generatedNodeId,"generatedNodeId", null , null);
         System.out.println("===============================");
         System.out.println("has children ? " + response);
         System.out.println("===============================");
@@ -27,7 +27,7 @@ public class Neo4jHandler {
     }
 
     public ArrayList<Node> getAncestors(int generatedNodeId){
-        Object response = RestClientHandler.doConnection(ResourceHandler.getPropertyValue("getAncestors"), generatedNodeId,"generatedNodeId" , null, null);
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("getAncestors"), generatedNodeId,"generatedNodeId" , null, null);
         System.out.println("===============================");
         System.out.println("returned ancestors nodes " + response);
         System.out.println("===============================");
@@ -36,12 +36,15 @@ public class Neo4jHandler {
     }
 
     public int assignPageToNode(int generatedNodeId){
-        //TODO implement
-        return 0;
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("createPageIdtoNode"), generatedNodeId,"generatedNodeId",null,null );
+        System.out.println("===============================");
+        System.out.println("created page id " + Integer.valueOf(response.toString())+" to node id "+generatedNodeId+" ? "+ response);
+        System.out.println("===============================");
+        return Integer.valueOf(response.toString());
     }
 
     public boolean assignPageToNode(int generatedNodeId, int pageId){
-        Object response = RestClientHandler.doConnection(ResourceHandler.getPropertyValue("addPageIdtoNode"), generatedNodeId,"generatedNodeId" , pageId, "pageId");
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("addPageIdtoNode"), generatedNodeId,"generatedNodeId" , pageId, "pageId");
         System.out.println("===============================");
         System.out.println("assigned page id " + pageId +" to node id "+generatedNodeId+" ? "+ response);
         System.out.println("===============================");
@@ -49,18 +52,31 @@ public class Neo4jHandler {
         return flag;
     }
 
-    public Node getNativeVirusNode(){
+    public ArrayList<Node> getNativeVirusNode(){
         //TODO implement
-        return new Node(5006, "Viruses");
+//        return new Node(5006, "Viruses");
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("getNativeVirusNode"),null,null,null,null);
+        System.out.println("===============================");
+        System.out.println(" " + response);
+        System.out.println("===============================");
+        ArrayList<Node>  Nodes = (ArrayList<Node>)response;
+        return  Nodes ;
     }
 
-    public ArrayList<Node> getNodesFromIds(ArrayList<Integer> childrenIds){
-        //TODO implement
-        return new ArrayList<Node>();
+    public ArrayList<Node> getNodesFromIds(ArrayList<Integer> ids){
+        if (ids.size()>0){
+        Object response = RestClientHandler.doConnectionPost(ResourceHandler.getPropertyValue("getNodes"), ids);
+        System.out.println("===============================");
+        System.out.println("returned nodes using ids "+ response);
+        System.out.println("===============================");
+        ArrayList<Node>  Nodes = (ArrayList<Node>)response;
+        return  Nodes ;
+    }
+        else return new ArrayList<Node>();
     }
 
     public ArrayList<Node> getRootNodes(int resourceId){
-            Object response = RestClientHandler.doConnection(ResourceHandler.getPropertyValue("getRootNodes"), resourceId, "resourceId" , null , null);
+            Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("getRootNodes"), resourceId, "resourceId" , null , null);
             System.out.println("===============================");
             System.out.println("returned root nodes " + response);
             System.out.println("===============================");

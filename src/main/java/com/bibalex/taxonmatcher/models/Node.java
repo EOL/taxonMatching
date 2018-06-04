@@ -5,7 +5,7 @@ import com.bibalex.taxonmatcher.handlers.Neo4jHandler;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
+
 
 /**
  * Created by Amr.Morad
@@ -24,6 +24,7 @@ public class Node implements Serializable {
     int pageId;
     long created_at;
     long updated_at;
+    String canonicalName;
     Neo4jHandler neo4jHandler= new Neo4jHandler();
 //    Neo4jHandler neo4jHandler;
 
@@ -152,7 +153,7 @@ public class Node implements Serializable {
 
     public boolean needsToBeMapped(){
         //resourceId = 0 indicates the DWH id
-        if (this != null && ((this.getPageId() == 0) || (this.resourceId != 0)))
+        if (this != null && ((this.getPageId() == 0) && (this.resourceId != 0)))
             return true;
         return false;
     }
@@ -189,5 +190,12 @@ public class Node implements Serializable {
         this.updated_at = updated_at;
     }
 
+    public String getCanonicalName() {
+        return canonicalName;
+    }
+
+    public void setCanonicalName(String canonicalName) {
+        this.canonicalName = canonicalName;
+    }
 
 }

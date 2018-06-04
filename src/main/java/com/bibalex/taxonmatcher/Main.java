@@ -13,9 +13,17 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+
         ResourceHandler.initialize("config.properties");
         LogHandler.initializeHandler();
         Neo4jHandler neo4jHandler = new Neo4jHandler();
+//        ArrayList<Integer> e= new ArrayList<Integer>();
+//        e.add(20);
+//        e.add(1);
+//        neo4jHandler.getNodesFromIds(e);
+
+
 //        neo4jHandler.getRootNodes(363);
 //        neo4jHandler.getChildren(130);
 //        neo4jHandler.getAncestors(20);
@@ -24,7 +32,7 @@ public class Main {
 
 
         NodeMapper nodeMapper = new NodeMapper();
-        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(1));
+        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(2));
 
 
 //        NodeMapper nm = new NodeMapper();

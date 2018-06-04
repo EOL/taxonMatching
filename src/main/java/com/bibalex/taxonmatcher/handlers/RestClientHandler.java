@@ -29,42 +29,20 @@ import java.util.Map;
  * Created by Amr Morad
  */
 public class RestClientHandler {
-    public static Object doConnection(String uri, Object object_1,Object param_1,Object object_2,Object param_2){
+    public static Object doConnectionGet(String uri, Object object_1,Object param_1,Object object_2,Object param_2){
         RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity response = null;
         if(!uri.equalsIgnoreCase("")) {
-//            if(ResourceHandler.getPropertyValue("proxyExists").equalsIgnoreCase("true")) {
-//                restTemplate = handleProxy(ResourceHandler.getPropertyValue("proxy.url"),
-//                        Integer.parseInt(ResourceHandler.getPropertyValue("proxy.port")),
-//                        ResourceHandler.getPropertyValue("proxy.userName"),
-//                        ResourceHandler.getPropertyValue("proxy.password"));
-//            }else {
-//                restTemplate = new RestTemplate();
-//            }
+            restTemplate.setMessageConverters(createJsonConverter());
+            HttpHeaders headers = setHeaders();
 
-            //create the json converter
-            MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-            List<HttpMessageConverter<?>> list = new ArrayList<HttpMessageConverter<?>>();
-            list.add(converter);
-            restTemplate.setMessageConverters(list);
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-            headers.set("Accept", "application/json");
-
-            // Pass the object and the needed headers
-            ResponseEntity response = null;
-//            if(object instanceof Node) {
-//                HttpEntity<Node> entity = new HttpEntity<Node>((Node) object, headers);
-                // Send the request as POST
             Map<String, String> params = new HashMap<String, String>();
-            params.put(ResourceHandler.getPropertyValue(String.valueOf(param_1)), String.valueOf(object_1));
+            if(param_1!=null) {params.put(ResourceHandler.getPropertyValue(String.valueOf(param_1)), String.valueOf(object_1));}
             if (param_2!=null){params.put(ResourceHandler.getPropertyValue(String.valueOf(param_2)), String.valueOf(object_2));}
 
             HttpEntity<String> entity = new HttpEntity<String>(headers);
-//                response = restTemplate.exchange(uri, HttpMethod.POST, entity, Integer.class);
-              response = restTemplate.exchange(uri,HttpMethod.GET, entity,Object.class, params);
-//                System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIIIIII");
-//                System.out.println(response);
+            response = restTemplate.exchange(uri,HttpMethod.GET, entity,Object.class, params);
+
 
                 if (response.getStatusCode() == HttpStatus.OK) {
 //                    System.out.println(response.getBody());
@@ -72,8 +50,6 @@ public class RestClientHandler {
                 } else {
                     System.out.println("returned code(" + response.getStatusCode() + ")");
                 }
-//            }
-
 
 
         }else{
@@ -82,18 +58,44 @@ public class RestClientHandler {
         return "";
     }
 
-    private static RestTemplate handleProxy(String proxyUrl, int port, String username, String password){
-        CredentialsProvider credsProvider = new BasicCredentialsProvider();
-        credsProvider.setCredentials(new AuthScope(proxyUrl, port), new UsernamePasswordCredentials(username, password));
-        HttpClientBuilder clientBuilder = HttpClientBuilder.create();
-        clientBuilder.useSystemProperties();
-        clientBuilder.setProxy(new HttpHost(proxyUrl, port));
-        clientBuilder.setDefaultCredentialsProvider(credsProvider);
-        clientBuilder.setProxyAuthenticationStrategy(new ProxyAuthenticationStrategy());
-        CloseableHttpClient client = clientBuilder.build();
-        //set the HTTP client
-        HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory();
-        factory.setHttpClient(client);
-        return new RestTemplate(factory);
+    public static Object doConnectionPost(String uri, Object object_1) {
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity response = null;
+        if (!uri.equalsIgnoreCase("")) {
+
+            restTemplate.setMessageConverters(createJsonConverter());
+            HttpHeaders headers = setHeaders();
+            HttpEntity<Object> entity = new HttpEntity<Object>(object_1,headers);
+            response = restTemplate.exchange(uri, HttpMethod.POST, entity,Object.class);
+
+
+            if (response.getStatusCode() == HttpStatus.OK) {
+//                    System.out.println(response.getBody());
+                return response.getBody();
+            } else {
+                System.out.println("returned code(" + response.getStatusCode() + ")");
+            }
+
+        } else {
+            System.out.println("Empty uri");
+        }
+        return "";
     }
+
+    public static List<HttpMessageConverter<?>> createJsonConverter()
+    {
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+        List<HttpMessageConverter<?>> list = new ArrayList<HttpMessageConverter<?>>();
+        list.add(converter);
+        return list;
+    }
+
+    public static HttpHeaders setHeaders()
+    {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("Accept", "application/json");
+        return headers ;
+    }
+
 }

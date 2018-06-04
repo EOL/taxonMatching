@@ -41,13 +41,15 @@ public class SearchHandler {
             //not finalized
             if (ancestor != null && !strategy.getAttribute().equalsIgnoreCase(scientificNameAttr)){
                 //case other ancestor will not be valid in the code
-                searchQuery += " AND ancestor_ids : " + ancestor.getGeneratedNodeId();
+                searchQuery += " AND ancestors_ids : " + ancestor.getGeneratedNodeId();
             }
             if(globalNameHandler.isHybrid(node.getScientificName())){
                 searchQuery += " AND is_hybrid = True";
             }
         }
+        System.out.println("=======================================");
         logger.info("Search query is: " + searchQuery);
+        System.out.println("========================================");
         return searchQuery;
     }
 
@@ -56,15 +58,22 @@ public class SearchHandler {
 //    }
 
     public ArrayList<SearchResult> getResults(Node node, Strategy strategy, Node ancestor){
+        ArrayList<Integer> children = new ArrayList<Integer>();
+        ArrayList<Integer> ancestors = new ArrayList<Integer>();
         String searchQuery = buildSearchQuery(node, strategy, ancestor);
         SolrDocumentList solrResultDocuments = solrHandler.performQuery(searchQuery);
-//        System.out.println("tttttttttt"+ solrResultDocuments.toString());
+        System.out.println("tttttttttt"+ solrResultDocuments.toString());
         ArrayList<SearchResult> results = new ArrayList<SearchResult>();
         for(SolrDocument document : solrResultDocuments){
-           ArrayList<Integer> children = castObjectsCollectionToIntegerList(document.getFieldValues("children_ids"));
+            if(document.getFieldValues("children_ids")!=null) {
+                children = castObjectsCollectionToIntegerList(document.getFieldValues("children_ids"));
+            }
+            if(document.getFieldValues("ancestors_ids")!=null) {
+                ancestors = castObjectsCollectionToIntegerList(document.getFieldValues("ancestors_ids"));
+            }
             SearchResult result = new SearchResult(Integer.parseInt(document.getFieldValue("id").
                     toString()), Integer.parseInt(document.getFieldValue("page_id").
-                    toString()), children);
+                    toString()), children,ancestors);
             results.add(result);
         }
         return results;
