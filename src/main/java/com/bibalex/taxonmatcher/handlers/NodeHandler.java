@@ -1,6 +1,8 @@
 package com.bibalex.taxonmatcher.handlers;
 
 import com.bibalex.taxonmatcher.models.Node;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.ArrayList;
 
 /**
@@ -28,6 +30,18 @@ public class NodeHandler {
 //        return new Node(1,1,9, "virus", "viruseen", "kingdom");
 //        return new Node("1", "Virus", "kingdom", "viruseen", "viruses", "virussss");
 
+    }
+
+    public ArrayList<Node> nodeMapper(ArrayList<Node> beforeMapping)
+    {
+        ArrayList<Node> afterMapping = new ArrayList<Node>();
+        ObjectMapper mapper = new ObjectMapper();
+        for(int i =0 ; i<beforeMapping.size();i++)
+        {
+            Node n = mapper.convertValue(beforeMapping.get(i), Node.class);
+            afterMapping.add(n);
+        }
+        return afterMapping;
     }
 
 }

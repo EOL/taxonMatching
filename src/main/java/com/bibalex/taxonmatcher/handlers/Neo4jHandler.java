@@ -84,4 +84,13 @@ public class Neo4jHandler {
         return roots;
     }
 
+    public ArrayList<Node> getsynonyms(int generatedNodeId){
+        Object response = RestClientHandler.doConnectionGet(ResourceHandler.getPropertyValue("getSynonyms"), generatedNodeId,"generatedNodeId" , null, null);
+        System.out.println("===============================");
+        System.out.println("returned synonyms nodes " + response);
+        System.out.println("===============================");
+        ArrayList<Node>synonyms = (ArrayList<Node>) response;
+        return synonyms;
+    }
+
 }

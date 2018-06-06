@@ -24,6 +24,7 @@ public class Main {
 //        neo4jHandler.getNodesFromIds(e);
 
 
+//          neo4jHandler.getsynonyms(3);
 //        neo4jHandler.getRootNodes(363);
 //        neo4jHandler.getChildren(130);
 //        neo4jHandler.getAncestors(20);
@@ -32,7 +33,7 @@ public class Main {
 
 
         NodeMapper nodeMapper = new NodeMapper();
-        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(2));
+        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(1));
 
 
 //        NodeMapper nm = new NodeMapper();

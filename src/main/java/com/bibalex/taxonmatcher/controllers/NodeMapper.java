@@ -24,6 +24,7 @@ public class NodeMapper {
     private FileHandler fileHandler;
     private Neo4jHandler neo4jHandler;
 
+
     public NodeMapper(){
         strategyHandler = new StrategyHandler();
         globalNameHandler = new GlobalNamesHandler();
@@ -34,10 +35,11 @@ public class NodeMapper {
         logger = LogHandler.getLogger(NodeMapper.class.getName());
         fileHandler = new FileHandler();
         neo4jHandler = new Neo4jHandler();
+
     }
 
     public void mapAllNodesToPages(ArrayList<Node> rootNodes){
-       ArrayList<Node> mappedRootNodes= nodeMapper(rootNodes);
+       ArrayList<Node> mappedRootNodes= nodeHandler.nodeMapper(rootNodes);
         mapNodes(mappedRootNodes);
     }
 
@@ -74,7 +76,7 @@ public class NodeMapper {
             System.out.println("====================children=================");
 
             logger.info("====================children=================");
-            mapNodes(nodeMapper(node.getChildren()));
+            mapNodes(nodeHandler.nodeMapper(node.getChildren()));
         }
     }
 
@@ -89,11 +91,11 @@ public class NodeMapper {
                 System.out.println("map node: virus");
                 logger.info("map node: virus");
                 //not finalized as we need ancestor to be arraylist
-                ancestor = nodeMapper(nodeHandler.nativeVirus()).get(0);
+                ancestor = nodeHandler.nodeMapper(nodeHandler.nativeVirus()).get(0);
             }else{
                 System.out.println("map Node : not virus neither surrogate");
                 logger.info("map Node : not virus neither surrogate");
-             ancestor = nodeHandler.matchedAncestor(nodeMapper(node.getAncestors()), depth);
+             ancestor = nodeHandler.matchedAncestor(nodeHandler.nodeMapper(node.getAncestors()), depth);
 
             }
             mapUnflaggedNode(node, ancestor, depth, strategy);
@@ -139,10 +141,10 @@ public class NodeMapper {
 
         for(SearchResult result : results){
             System.out.println(neo4jHandler.getNodesFromIds(result.getChildren()));
-            int matchedChildrenCount = matchingScoreHandler.countMatches(nodeMapper(neo4jHandler.getNodesFromIds(result.getChildren())),nodeMapper(node.getChildren()));
+            int matchedChildrenCount = matchingScoreHandler.countMatches(nodeHandler.nodeMapper(neo4jHandler.getNodesFromIds(result.getChildren())),nodeHandler.nodeMapper(node.getChildren()));
             System.out.println("**********************************************************************************");
             logger.info("matched children count " + matchedChildrenCount);
-            int matchedAncestorsCount = matchingScoreHandler.countAncestors(nodeMapper(neo4jHandler.getNodesFromIds(result.getAncestors())));
+            int matchedAncestorsCount = matchingScoreHandler.countAncestors(nodeHandler.nodeMapper(neo4jHandler.getNodesFromIds(result.getAncestors())));
 //            int matchedAncestorsCount = matchingScoreHandler.countAncestors(node);
             logger.info("matched Ancestors count " + matchedAncestorsCount);
             double overallScore = matchingScoreHandler.calculateScore(matchedChildrenCount, matchedAncestorsCount);
@@ -183,16 +185,6 @@ public class NodeMapper {
        // node.setPageId(newPage.getId());
     }
 
-    public ArrayList<Node> nodeMapper(ArrayList<Node> beforeMapping)
-    {
-        ArrayList<Node> afterMapping = new ArrayList<Node>();
-        ObjectMapper mapper = new ObjectMapper();
-        for(int i =0 ; i<beforeMapping.size();i++)
-        {
-            Node n = mapper.convertValue(beforeMapping.get(i), Node.class);
-            afterMapping.add(n);
-        }
-        return afterMapping;
-    }
+
 
 }

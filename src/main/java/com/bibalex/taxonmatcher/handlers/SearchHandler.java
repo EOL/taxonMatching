@@ -19,12 +19,16 @@ public class SearchHandler {
     private GlobalNamesHandler globalNameHandler;
     private SolrHandler solrHandler;
     private static Logger logger;
+    private Neo4jHandler neo4jHandler;
+    private NodeHandler nodeHandler;
 
     public SearchHandler()
     {
         globalNameHandler = new GlobalNamesHandler();
         solrHandler = new SolrHandler();
         logger = LogHandler.getLogger(NodeMapper.class.getName());
+        neo4jHandler = new Neo4jHandler();
+        nodeHandler = new NodeHandler();
     }
 
     private String buildSearchQuery(Node node, Strategy strategy, Node ancestor){
@@ -34,10 +38,54 @@ public class SearchHandler {
             searchQuery += strategy.getIndex();
 //            searchQuery += strategy.getType().equalsIgnoreCase("in") ? " : " : " = ";
             searchQuery += ":";
-            searchQuery += '"';
-            searchQuery += strategy.getAttribute().equalsIgnoreCase(scientificNameAttr) ?
-                    node.getScientificName() : globalNameHandler.getCanonicalForm(node.getScientificName());
-            searchQuery += '"';
+
+            if (strategy.getIndex().equalsIgnoreCase("synonyms")||strategy.getIndex().equalsIgnoreCase("other_synonyms")||
+                    strategy.getIndex().equalsIgnoreCase("canonical_synonyms")||strategy.getIndex().equalsIgnoreCase("other_canonical_synonyms")){
+                ArrayList<Node> synonyms = nodeHandler.nodeMapper(neo4jHandler.getsynonyms(node.getGeneratedNodeId()));
+                if(strategy.getIndex().equalsIgnoreCase("synonyms")||strategy.getIndex().equalsIgnoreCase("canonical_synonyms"))
+                {
+                    searchQuery +="(";
+                    for(Node n:synonyms)
+                    {
+                        if(n.getResourceId()==node.getResourceId())
+                        {
+                            searchQuery += '"';
+                            searchQuery += strategy.getAttribute().equalsIgnoreCase(scientificNameAttr) ?
+                                    n.getScientificName() : globalNameHandler.getCanonicalForm(n.getScientificName());
+                            searchQuery += '"';
+
+                        }
+
+                    }
+                    searchQuery +=")";
+
+                }
+                else
+                {
+                    searchQuery +="(";
+                    for(Node n:synonyms)
+                    {
+
+                        if(n.getResourceId()!=node.getResourceId())
+                        {
+                            searchQuery += '"';
+                            searchQuery += strategy.getAttribute().equalsIgnoreCase(scientificNameAttr) ?
+                                    n.getScientificName() : globalNameHandler.getCanonicalForm(n.getScientificName());
+                            searchQuery += '"';
+
+                        }
+
+                    }
+                    searchQuery +=")";
+                }
+            }
+            else{
+                searchQuery += '"';
+                searchQuery += strategy.getAttribute().equalsIgnoreCase(scientificNameAttr) ?
+                        node.getScientificName() : globalNameHandler.getCanonicalForm(node.getScientificName());
+                searchQuery += '"';
+            }
+
             //not finalized
             if (ancestor != null && !strategy.getAttribute().equalsIgnoreCase(scientificNameAttr)){
                 //case other ancestor will not be valid in the code
