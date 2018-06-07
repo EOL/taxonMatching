@@ -12,6 +12,7 @@ public class NodeHandler {
 
     public Node matchedAncestor(ArrayList<Node> ancestors, int depth){
         System.out.println("matched ancestor");
+        System.out.println(depth);
         int i = 0;
         if (ancestors != null) {
             for (Node ancestor : ancestors) {

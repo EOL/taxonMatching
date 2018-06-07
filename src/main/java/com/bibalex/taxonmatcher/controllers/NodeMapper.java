@@ -95,7 +95,7 @@ public class NodeMapper {
             }else{
                 System.out.println("map Node : not virus neither surrogate");
                 logger.info("map Node : not virus neither surrogate");
-             ancestor = nodeHandler.matchedAncestor(nodeHandler.nodeMapper(node.getAncestors()), depth);
+            ancestor = nodeHandler.matchedAncestor(nodeHandler.nodeMapper(node.getAncestors()), depth);
 
             }
             mapUnflaggedNode(node, ancestor, depth, strategy);
@@ -108,17 +108,30 @@ public class NodeMapper {
         if(results.size() == 1){
             System.out.println("results returned is one");
             logger.info("results returned is one");
-          node =  mapToPage(node, results.get(0).getPageId());
+            if (results.get(0).getPageId() == 0) {
+                unmappedNode(node);
+            } else {
+                mapToPage(node, results.get(0).getPageId());
+            }
+
+
         }else if(results.size() > 1){
             System.out.println("results returned is greater than one");
             logger.info("results returned is greater than one");
-            System.out.println(findBestMatch(node, results));
-            node = mapToPage(node, findBestMatch(node, results));
+            int pageId = findBestMatch(node, results);
+            if ( pageId != 0) {
+                mapToPage(node, pageId);
+            } else {
+                unmappedNode(node);
+            }
         }else{
+
             nextStrategy = strategyHandler.getNextStrategy(strategy);
             if (nextStrategy == null) {
+
                 nextStrategy = strategyHandler.firstNonScientificStrategy();
                 depth++;
+                ancestor = nodeHandler.matchedAncestor(nodeHandler.nodeMapper(node.getAncestors()), depth);
                 System.out.println("depth is: " + depth);
                 logger.info("depth is: " + depth);
                 if (depth > maxAncestorDepth) {
@@ -162,8 +175,15 @@ public class NodeMapper {
                 return  Double.compare(score1.getScore(), score2.getScore());
             }
         });
+        Collections.reverse(scores);
 
-        return scores.get(scores.size()-1).getPageId();
+        for( int i=0 ; i<scores.size() ;i++)
+        {
+            if(scores.get(i).getPageId()!=0)
+                return scores.get(i).getPageId() ;
+        }
+
+        return 0;
 
     }
 

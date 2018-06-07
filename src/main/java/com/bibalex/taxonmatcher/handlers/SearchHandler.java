@@ -87,12 +87,14 @@ public class SearchHandler {
             }
 
             //not finalized
+            //case search by canonical name
+            //if next strategy == null search by canonical and ancestor at that depth
             if (ancestor != null && !strategy.getAttribute().equalsIgnoreCase(scientificNameAttr)){
                 //case other ancestor will not be valid in the code
                 searchQuery += " AND ancestors_ids : " + ancestor.getGeneratedNodeId();
             }
             if(globalNameHandler.isHybrid(node.getScientificName())){
-                searchQuery += " AND is_hybrid = True";
+                searchQuery += " AND is_hybrid : True";
             }
         }
         System.out.println("=======================================");
@@ -119,9 +121,10 @@ public class SearchHandler {
             if(document.getFieldValues("ancestors_ids")!=null) {
                 ancestors = castObjectsCollectionToIntegerList(document.getFieldValues("ancestors_ids"));
             }
+
+            int pageId = document.getFieldValue("page_id") == null? 0:Integer.parseInt(document.getFieldValue("page_id").toString());
             SearchResult result = new SearchResult(Integer.parseInt(document.getFieldValue("id").
-                    toString()), Integer.parseInt(document.getFieldValue("page_id").
-                    toString()), children,ancestors);
+                    toString()), pageId, children,ancestors);
             results.add(result);
         }
         return results;
