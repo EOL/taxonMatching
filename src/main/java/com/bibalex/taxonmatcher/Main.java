@@ -1,6 +1,7 @@
 package com.bibalex.taxonmatcher;
 
 import com.bibalex.taxonmatcher.controllers.NodeMapper;
+import com.bibalex.taxonmatcher.controllers.RunTaxonMatching;
 import com.bibalex.taxonmatcher.handlers.LogHandler;
 import com.bibalex.taxonmatcher.handlers.Neo4jHandler;
 import com.bibalex.taxonmatcher.handlers.ResourceHandler;
@@ -15,9 +16,13 @@ public class Main {
 	// write your code here
 
 
-        ResourceHandler.initialize("config.properties");
-        LogHandler.initializeHandler();
-        Neo4jHandler neo4jHandler = new Neo4jHandler();
+        RunTaxonMatching test = new RunTaxonMatching();
+        test.RunTaxonMatching(1);
+//        ResourceHandler.initialize("config.properties");
+//        LogHandler.initializeHandler();
+//        Neo4jHandler neo4jHandler = new Neo4jHandler();
+//        NodeMapper nodeMapper = new NodeMapper();
+//        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(1));
 //        ArrayList<Integer> e= new ArrayList<Integer>();
 //        e.add(20);
 //        e.add(1);
@@ -32,8 +37,7 @@ public class Main {
 //        neo4jHandler.assignPageToNode(10,3);
 
 
-        NodeMapper nodeMapper = new NodeMapper();
-        nodeMapper.mapAllNodesToPages(neo4jHandler.getRootNodes(1));
+
 
 
 //        NodeMapper nm = new NodeMapper();
